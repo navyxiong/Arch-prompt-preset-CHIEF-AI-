@@ -1,42 +1,42 @@
 {
-    "01_日景风格1": {
-    "camera_gear": {
-    "model": "Canon EOS R5",
-    "lens": "24mm",
-    "sensor": "Full-frame CMOS sensor",
-    "shutter_speed": "Slow shutter speed (approx 1/30s) to capture slight motion blur in vehicles",
-    "aperture": "f/4"
-  },
-    "lighting_setup": {
-    "time_of_day": "Dusk / Blue Hour transitioning to night (Civil Twilight)",
-    "weather": "Clear sky with strong twilight gradient (magenta/pink horizon to deep blue overhead)",
-    "lighting_direction": "Mixed lighting: Backlighting from the twilight sky, frontal/side lighting from street sources",
-    "quality": "Soft ambient skylight contrasting with hard, punctual artificial light sources",
-    "artificial_light": "Warm glowing streetlights (sodium vapor effect),  Interior office illumination (3000K-4000K mixed)"
-  },
-    "color_grading": {
-    "palette": "Cinematic Teal and Orange complementary scheme. Warm tones (orange/amber) in the street level lights. Cool tones (deep blue/magenta/purple) in the upper sky and shadows.",
-    "saturation": "Rich and saturated, particularly in the warm streetlights",
-    "contrast": "High contrast with deep shadows and bright, specular highlights"
-  },
-    "texture_quality": {
-    "details": "Reflective wet asphalt reflecting lights and neon,tactile pavement textures，windows with reflection and diffuse light transmission dual effect"，
-    "surface_descriptions"："Ray-traced reflections on glass, physically based rendering (PBR) material fidelity, sharp architectural edges，real indoor scenes of buildings"
-  },
-    "composition_guide": {
-    "type": "Central composition",
-    "balance": "symmetrical"
-  },
-    "atmosphere": {
-    "mood": "Cinematic, moody, bustling, dramatic, energetic",
-    "feeling": "The vibrant transition of a megacity from day to night"
-  },
-    "technical_quality": {
-    "post_processing": "Cinematic color grading with split-toning, increased clarity and local contrast, slight bloom effect around bright light sources",
-    "white_balance": "Mixed WB, leaning towards tungsten (warm) for the foreground and street lights, allowing the sky to go naturally cool/magenta",
-    "tone": "Dark and moody with crushed blacks in the periphery and bright highlights in the center",
-    "vignette": "Strong optical vignette to darken corners and focus attention on the central street scene and the main building",
-    "dynamic_range": "High dynamic range (HDR) look, preserving details in both the bright car lights and the dark building facades"
-  }
+    "01_夜景风格1（雨后）": {
+        "camera_gear": {
+            "model": "Canon EOS R5",
+            "lens": "24mm",
+            "sensor": "Full-frame CMOS sensor",
+            "shutter_speed": "Slow shutter speed (approx 1/30s) to capture slight motion blur in vehicles",
+            "aperture": "f/4"
+        },
+        "lighting_setup": {
+            "time_of_day": "Dusk / Blue Hour transitioning to night (Civil Twilight)",
+            "weather": "Clear sky with strong twilight gradient (magenta/pink horizon to deep blue overhead)",
+            "lighting_direction": "Mixed lighting: Backlighting from the twilight sky, frontal/side lighting from street sources",
+            "quality": "Soft ambient skylight contrasting with hard, punctual artificial light sources",
+            "artificial_light": "Warm glowing streetlights (sodium vapor effect), Interior office illumination (3000K-4000K mixed)"
+        },
+        "color_grading": {
+            "palette": "Cinematic Teal and Orange complementary scheme. Warm tones (orange/amber) in the street level lights. Cool tones (deep blue/magenta/purple) in the upper sky and shadows.",
+            "saturation": "Rich and saturated, particularly in the warm streetlights",
+            "contrast": "High contrast with deep shadows and bright, specular highlights"
+        },
+        "texture_quality": {
+            "details": "Reflective wet asphalt reflecting lights and neon, tactile pavement textures, windows with reflection and diffuse light transmission dual effect",
+            "surface_descriptions": "Ray-traced reflections on glass, physically based rendering (PBR) material fidelity, sharp architectural edges, real indoor scenes of buildings"
+        },
+        "composition_guide": {
+            "type": "Central composition",
+            "balance": "symmetrical"
+        },
+        "atmosphere": {
+            "mood": "Cinematic, moody, bustling, dramatic, energetic",
+            "feeling": "The vibrant transition of a megacity from day to night"
+        },
+        "technical_quality": {
+            "post_processing": "Cinematic color grading with split-toning, increased clarity and local contrast, slight bloom effect around bright light sources",
+            "white_balance": "Mixed WB, leaning towards tungsten (warm) for the foreground and street lights, allowing the sky to go naturally cool/magenta",
+            "tone": "Dark and moody with crushed blacks in the periphery and bright highlights in the center",
+            "vignette": "Strong optical vignette to darken corners and focus attention on the central street scene and the main building",
+            "dynamic_range": "High dynamic range (HDR) look, preserving details in both the bright car lights and the dark building facades"
+        }
     }
 }
