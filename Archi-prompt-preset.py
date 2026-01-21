@@ -11,7 +11,7 @@ class ArchiPromptPreset:
     # 🛠️ [配置区] 内置固定提示词 (Built-in Fixed Prompt)
     # 修改这里的字符串，它将永远出现在输出文本的最前面。
     # ==============================================================================
-    FIXED_PREFIX = "masterpiece, best quality, architectural visualization, 8k resolution"
+    FIXED_PREFIX = "Transform the image into a real-life photo according to the following requirements, strictly maintain the consistency of the image content, strictly maintain the consistency of the buildings and environment in the image, and do not change the shooting angle and composition of the image."
 
     def __init__(self):
         pass
