@@ -3,7 +3,7 @@ import os
 
 class ArchiPromptPreset:
     """
-    ComfyUI Node: Archi-prompt-preset
+    ComfyUI Node: archi_prompt_preset
     Loads keys from presets.json and adds a fixed built-in prefix.
     """
 
@@ -98,5 +98,5 @@ NODE_CLASS_MAPPINGS = {
 
 # 这里决定了在 ComfyUI 界面上显示的名字
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "ArchiPromptPreset": "Archi-prompt-preset"
+    "ArchiPromptPreset": "archi_prompt_preset"
 }
