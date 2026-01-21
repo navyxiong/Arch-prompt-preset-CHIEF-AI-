@@ -1,98 +1,102 @@
 import json
 import os
 
-class JsonPromptLoader:
+class ArchiPromptPreset:
     """
-    A ComfyUI custom node that loads prompts from a JSON file 
-    and prepends a fixed prefix string.
+    ComfyUI Node: Archi-prompt-preset
+    Loads keys from presets.json and adds a fixed built-in prefix.
     """
-    
-    # ============================================================
-    # [CONFIGURATION]
-    # Edit this string to change the fixed prefix for all outputs.
-    # ============================================================
-    FIXED_PREFIX = "Transform the image into a real-life photo according to the following requirements, strictly maintain the consistency of the image content, strictly maintain the consistency of the buildings and environment in the image, and do not change the shooting angle and composition of the image."
-    
+
+    # ==============================================================================
+    # 🛠️ [配置区] 内置固定提示词 (Built-in Fixed Prompt)
+    # 修改这里的字符串，它将永远出现在输出文本的最前面。
+    # ==============================================================================
+    FIXED_PREFIX = "masterpiece, best quality, architectural visualization, 8k resolution"
+
     def __init__(self):
         pass
     
     @classmethod
     def INPUT_TYPES(s):
         """
-        Defines the input ports of the node.
-        Reads keys from 'presets.json' to populate the dropdown menu.
+        定义节点输入：读取 presets.json 并生成下拉菜单
         """
         current_dir = os.path.dirname(os.path.realpath(__file__))
         json_path = os.path.join(current_dir, "presets.json")
         
-        # Default option if JSON is missing or empty
-        preset_keys = ["None"]
+        # 默认列表
+        preset_keys = ["Error: presets.json not found"]
         
         if os.path.exists(json_path):
             try:
                 with open(json_path, 'r', encoding='utf-8') as f:
                     data = json.load(f)
                     if data:
-                        # Sort keys to make the list easier to read
+                        # 排序 Key
                         preset_keys = sorted(list(data.keys()))
+                    else:
+                        preset_keys = ["Error: JSON is empty"]
             except Exception as e:
-                print(f"[JsonPromptLoader] Error loading presets.json: {e}")
-        else:
-            print(f"[JsonPromptLoader] Warning: presets.json not found at {json_path}")
+                print(f"[ArchiPromptPreset] JSON Load Error: {e}")
+                preset_keys = [f"Error: {str(e)}"]
         
         return {
             "required": {
-                "preset": (preset_keys, ),
+                # 下拉菜单：界面上显示的 Keys
+                "preset_key": (preset_keys, ),
             }
         }
 
     RETURN_TYPES = ("STRING",)
-    RETURN_NAMES = ("prompt_text",)
-    FUNCTION = "load_prompt"
-    CATEGORY = "Architecture Nodes"
+    RETURN_NAMES = ("final_prompt",)
+    
+    FUNCTION = "process_prompt"
+    # 分类路径，你可以根据喜好修改，比如改成 "Architecture"
+    CATEGORY = "Architecture"
 
-    def load_prompt(self, preset):
+    def process_prompt(self, preset_key):
         current_dir = os.path.dirname(os.path.realpath(__file__))
         json_path = os.path.join(current_dir, "presets.json")
         
-        selected_prompt = ""
+        selected_content = ""
         
-        # Load the selected prompt from JSON
+        # 1. 读取 JSON 内容
         if os.path.exists(json_path):
             try:
                 with open(json_path, 'r', encoding='utf-8') as f:
                     data = json.load(f)
-                    if preset in data:
-                        # Support both direct string and object with "prompt" key
-                        entry = data[preset]
+                    if preset_key in data:
+                        entry = data[preset_key]
                         if isinstance(entry, dict):
-                            selected_prompt = entry.get("prompt", "")
+                            selected_content = entry.get("prompt", "")
                         elif isinstance(entry, str):
-                            selected_prompt = entry
-                        
-                        # Logging for debugging
-                        # print(f"[JsonPromptLoader] Selected: {preset}")
+                            selected_content = entry
+                    else:
+                        print(f"[ArchiPromptPreset] Key '{preset_key}' not found.")
             except Exception as e:
-                print(f"[JsonPromptLoader] Error reading entry: {e}")
+                print(f"[ArchiPromptPreset] Runtime Error: {e}")
         
-        # Combine Fixed Prefix + Selected Prompt
-        # Check if prefix exists and is not empty
-        if self.FIXED_PREFIX and self.FIXED_PREFIX.strip():
-            if selected_prompt:
-                final_prompt = f"{self.FIXED_PREFIX}, {selected_prompt}"
-            else:
-                # If preset is empty, just return the prefix
-                final_prompt = self.FIXED_PREFIX
-        else:
-            final_prompt = selected_prompt
-            
-        return (final_prompt,)
+        # 2. 拼接逻辑
+        prefix = self.FIXED_PREFIX.strip()
+        content = selected_content.strip()
+        
+        final_output = ""
 
-# Node Export Configurations
+        if prefix and content:
+            final_output = f"{prefix}, {content}"
+        elif prefix:
+            final_output = prefix
+        else:
+            final_output = content
+            
+        return (final_output,)
+
+# 节点注册映射
 NODE_CLASS_MAPPINGS = {
-    "JsonPromptLoader": JsonPromptLoader
+    "ArchiPromptPreset": ArchiPromptPreset
 }
 
+# 这里决定了在 ComfyUI 界面上显示的名字
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "JsonPromptLoader": "🏗️ Arch Prompt Selector"
+    "ArchiPromptPreset": "Archi-prompt-preset"
 }
