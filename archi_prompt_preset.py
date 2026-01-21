@@ -5,11 +5,11 @@ class ArchiPromptPreset:
     """
     ComfyUI Node: archi_prompt_preset
     Loads keys from presets.json and adds a fixed built-in prefix.
+    Supports both simple "prompt" key and nested dictionary structures.
     """
 
     # ==============================================================================
-    # 🛠️ [配置区] 内置固定提示词 (Built-in Fixed Prompt)
-    # 修改这里的字符串，它将永远出现在输出文本的最前面。
+    # 🛠️ [配置区] 内置固定提示词
     # ==============================================================================
     FIXED_PREFIX = "Transform the image into a real-life photo according to the following requirements, strictly maintain the consistency of the image content, strictly maintain the consistency of the buildings and environment in the image, and do not change the shooting angle and composition of the image."
 
@@ -18,13 +18,9 @@ class ArchiPromptPreset:
     
     @classmethod
     def INPUT_TYPES(s):
-        """
-        定义节点输入：读取 presets.json 并生成下拉菜单
-        """
         current_dir = os.path.dirname(os.path.realpath(__file__))
         json_path = os.path.join(current_dir, "presets.json")
         
-        # 默认列表
         preset_keys = ["Error: presets.json not found"]
         
         if os.path.exists(json_path):
@@ -32,17 +28,16 @@ class ArchiPromptPreset:
                 with open(json_path, 'r', encoding='utf-8') as f:
                     data = json.load(f)
                     if data:
-                        # 排序 Key
                         preset_keys = sorted(list(data.keys()))
                     else:
                         preset_keys = ["Error: JSON is empty"]
             except Exception as e:
+                # 这里会捕捉 JSON 语法错误并显示在菜单里
                 print(f"[ArchiPromptPreset] JSON Load Error: {e}")
                 preset_keys = [f"Error: {str(e)}"]
         
         return {
             "required": {
-                # 下拉菜单：界面上显示的 Keys
                 "preset_key": (preset_keys, ),
             }
         }
@@ -51,8 +46,22 @@ class ArchiPromptPreset:
     RETURN_NAMES = ("final_prompt",)
     
     FUNCTION = "process_prompt"
-    # 分类路径，你可以根据喜好修改，比如改成 "Architecture"
     CATEGORY = "Architecture"
+
+    # 辅助函数：递归提取字典中所有的字符串值
+    def extract_all_text(self, data):
+        texts = []
+        if isinstance(data, dict):
+            for value in data.values():
+                texts.extend(self.extract_all_text(value))
+        elif isinstance(data, list):
+            for item in data:
+                texts.extend(self.extract_all_text(item))
+        elif isinstance(data, str):
+            # 排除空字符串
+            if data.strip():
+                texts.append(data.strip())
+        return texts
 
     def process_prompt(self, preset_key):
         current_dir = os.path.dirname(os.path.realpath(__file__))
@@ -60,28 +69,40 @@ class ArchiPromptPreset:
         
         selected_content = ""
         
-        # 1. 读取 JSON 内容
         if os.path.exists(json_path):
             try:
                 with open(json_path, 'r', encoding='utf-8') as f:
                     data = json.load(f)
+                    # 检查是不是报错信息
+                    if preset_key.startswith("Error:"):
+                        print(f"[ArchiPromptPreset] Cannot process prompt because of JSON error.")
+                        return (self.FIXED_PREFIX,)
+
                     if preset_key in data:
                         entry = data[preset_key]
-                        if isinstance(entry, dict):
-                            selected_content = entry.get("prompt", "")
-                        elif isinstance(entry, str):
+                        
+                        # logic update: 智能判断
+                        if isinstance(entry, str):
                             selected_content = entry
+                        elif isinstance(entry, dict):
+                            # 1. 优先找 "prompt" 字段
+                            if "prompt" in entry:
+                                selected_content = entry["prompt"]
+                            else:
+                                # 2. 如果没有 prompt 字段，就把里面所有的值拼起来（适应你的JSON结构）
+                                all_texts = self.extract_all_text(entry)
+                                selected_content = ", ".join(all_texts)
+                                
                     else:
                         print(f"[ArchiPromptPreset] Key '{preset_key}' not found.")
             except Exception as e:
                 print(f"[ArchiPromptPreset] Runtime Error: {e}")
         
-        # 2. 拼接逻辑
+        # 拼接逻辑
         prefix = self.FIXED_PREFIX.strip()
         content = selected_content.strip()
         
         final_output = ""
-
         if prefix and content:
             final_output = f"{prefix}, {content}"
         elif prefix:
@@ -91,12 +112,10 @@ class ArchiPromptPreset:
             
         return (final_output,)
 
-# 节点注册映射
 NODE_CLASS_MAPPINGS = {
     "ArchiPromptPreset": ArchiPromptPreset
 }
 
-# 这里决定了在 ComfyUI 界面上显示的名字
 NODE_DISPLAY_NAME_MAPPINGS = {
     "ArchiPromptPreset": "archi_prompt_preset"
 }
