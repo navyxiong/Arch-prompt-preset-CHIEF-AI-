@@ -1,4 +1,4 @@
-# ComfyUI Archi-prompt-preset
+# ComfyUI archi_prompt_preset
 
 A streamlined custom node for [ComfyUI](https://github.com/comfyanonymous/ComfyUI) designed for efficient prompt management. 
 
@@ -18,4 +18,4 @@ It allows you to select prompt presets from an external JSON file via a dropdown
 
 1. Navigate to your ComfyUI `custom_nodes` directory:
    ```bash
-   cd ComfyUI/custom_nodes/git clone [https://github.com/YOUR_USERNAME/ComfyUI-Archi-prompt-preset.git](https://github.com/YOUR_USERNAME/ComfyUI-Archi-prompt-preset.git)
+   cd ComfyUI/custom_nodes/git clone [https://github.com/YOUR_USERNAME/ComfyUI-Archi-prompt-preset.git](https://github.com/YOUR_USERNAME/archi_prompt_preset.git)
