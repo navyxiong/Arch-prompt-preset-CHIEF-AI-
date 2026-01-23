@@ -18,8 +18,8 @@ class ArchiPromptPreset:
         current_dir = os.path.dirname(os.path.realpath(__file__))
         json_path = os.path.join(current_dir, "presets.json")
         
-        # 默认时间分类
-        time_categories = ["日景", "清晨", "黄昏", "夜景", "阴天"]
+        # 时间分类（已添加雨雪天）
+        time_categories = ["日景", "清晨", "黄昏", "夜景", "阴天", "雨雪天"]
         
         # 初始化每个时间的选项（默认为 ["无"]）
         time_options = {cat: ["无"] for cat in time_categories}
@@ -72,6 +72,10 @@ class ArchiPromptPreset:
                     "default": "无",
                     "tooltip": "选择阴天效果，选'无'则跳过此分类"
                 }),
+                "雨雪天": (time_options["雨雪天"], {
+                    "default": "无",
+                    "tooltip": "选择雨雪天效果，选'无'则跳过此分类"
+                }),
                 "custom_prompt": ("STRING", {
                     "multiline": True, 
                     "default": "", 
@@ -103,11 +107,11 @@ class ArchiPromptPreset:
                 texts.append(data.strip())
         return texts
 
-    def process_prompt(self, use_prefix, 日景, 清晨, 黄昏, 夜景, 阴天, custom_prompt):
+    def process_prompt(self, use_prefix, 日景, 清晨, 黄昏, 夜景, 阴天, 雨雪天, custom_prompt):
         current_dir = os.path.dirname(os.path.realpath(__file__))
         json_path = os.path.join(current_dir, "presets.json")
         
-        # 确定用户选择了哪个时间和风格（按优先级：日景 > 清晨 > 黄昏 > 夜景 > 阴天）
+        # 确定用户选择了哪个时间和风格（按优先级：日景 > 清晨 > 黄昏 > 夜景 > 阴天 > 雨雪天）
         selected_time = None
         selected_style = None
         
@@ -116,7 +120,8 @@ class ArchiPromptPreset:
             "清晨": 清晨,
             "黄昏": 黄昏,
             "夜景": 夜景,
-            "阴天": 阴天
+            "阴天": 阴天,
+            "雨雪天": 雨雪天
         }
         
         # 找到第一个非"无"的选择
@@ -199,5 +204,5 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "ArchiPromptPreset": "🏢 Archi Prompt Preset"
 }
 
-__version__ = "1.2.0"
-print(f"✅ Loaded ArchiPromptPreset v{__version__} - Multi-time selector with independent dropdowns")
+__version__ = "1.3.0"
+print(f"✅ Loaded ArchiPromptPreset v{__version__} - Multi-time selector with Rain/Snow support")
