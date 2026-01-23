@@ -19,6 +19,7 @@ cd ComfyUI/custom_nodes
 git clone https://github.com/yourusername/ArchiPromptPreset.git
 
 ### 方式二：手动安装
+
 下载本仓库所有文件
 将文件夹重命名为 ArchiPromptPreset
 移动至 ComfyUI/custom_nodes/ 目录下
