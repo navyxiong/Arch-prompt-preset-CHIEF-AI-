@@ -1,21 +1,32 @@
-# ComfyUI archi_prompt_preset
+# 🏢 ArchiPromptPreset - ComfyUI 建筑提示词预设节点
 
-A streamlined custom node for [ComfyUI](https://github.com/comfyanonymous/ComfyUI) designed for efficient prompt management. 
+一个专为建筑可视化工作流设计的 ComfyUI 自定义节点，支持两级菜单选择（时间+效果）、内置提示词前缀开关及自定义文本输入。
 
-It allows you to select prompt presets from an external JSON file via a dropdown menu, while automatically enforcing a built-in **Fixed Prefix** (e.g., quality tags) to ensure consistent output quality.
+## ✨ 功能特性
 
-![Node Screenshot](https://via.placeholder.com/600x200?text=Archi-prompt-preset+Screenshot)
-*(You can replace this link with a screenshot of your node)*
+- **🎛️ 两级联动菜单**：第一级选择时间（日景/清晨/黄昏/夜景/阴天），第二级选择具体效果风格
+- **🔘 前缀开关控制**：可选择是否自动添加内置的建筑摄影标准提示词前缀
+- **📝 自定义输入**：支持追加自定义提示词，灵活补充特定需求
+- **🗂️ 智能内容提取**：自动解析 JSON 中的嵌套字典结构，提取所有文本内容拼接为提示词
+- **⚡ 实时预览**：节点输出完整的组合提示词，可直接连接至 CLIP Text Encode
 
-## ✨ Features
+## 📦 安装方法
 
-- **JSON-Based Management**: Load unlimited prompt presets from `presets.json`.
-- **Dropdown Interface**: Automatically reads keys from the JSON file and displays them in a user-friendly dropdown menu.
-- **Built-in Fixed Prefix**: Automatically prepends a hardcoded string (e.g., "masterpiece, best quality, 8k") to every prompt, ensuring consistent style across all generations.
-- **Hot-Reloading (Values)**: You can tweak the prompt text in the JSON file without restarting ComfyUI (Note: Adding *new* keys requires a restart).
+### 方式一：直接克隆（推荐）
 
-## 📥 Installation
+```bash
+cd ComfyUI/custom_nodes
+git clone https://github.com/yourusername/ArchiPromptPreset.git
 
-1. Navigate to your ComfyUI `custom_nodes` directory:
-   ```bash
-   cd ComfyUI/custom_nodes/git clone [https://github.com/YOUR_USERNAME/ComfyUI-Archi-prompt-preset.git](https://github.com/YOUR_USERNAME/archi_prompt_preset.git)
+### 方式二：手动安装
+下载本仓库所有文件
+将文件夹重命名为 ArchiPromptPreset
+移动至 ComfyUI/custom_nodes/ 目录下
+确保文件结构如下：
+ComfyUI/custom_nodes/ArchiPromptPreset/
+├── __init__.py
+├── archi_prompt_preset.py
+├── presets.json
+└── README.md
+重启 ComfyUI
+
