@@ -20,10 +20,10 @@ git clone https://github.com/yourusername/ArchiPromptPreset.git
 
 ### 方式二：手动安装
 
-下载本仓库所有文件
-将文件夹重命名为 ArchiPromptPreset
-移动至 ComfyUI/custom_nodes/ 目录下
-确保文件结构如下：
+1. 下载本仓库所有文件
+2. 将文件夹重命名为 `ArchiPromptPreset`
+3. 移动至 `ComfyUI/custom_nodes/` 目录下
+4. 确保文件结构如下：
 ComfyUI/custom_nodes/ArchiPromptPreset/
 ├── __init__.py
 ├── archi_prompt_preset.py
