@@ -4,7 +4,7 @@ import os
 class ArchiPromptPreset:
     """
     ComfyUI Node: ArchiPromptPreset
-    建筑提示词预设选择器，支持两级菜单（时间+效果）、内置前缀开关及自定义提示词输入。
+    建筑提示词预设选择器，支持为每个时间分类独立选择效果，内置前缀开关及自定义提示词输入。
     适配二级嵌套 JSON 结构：{"日景": {"风格1（冷调）": {...}}, ...}
     """
 
@@ -18,33 +18,33 @@ class ArchiPromptPreset:
         current_dir = os.path.dirname(os.path.realpath(__file__))
         json_path = os.path.join(current_dir, "presets.json")
         
-        # 默认时间分类（第一级）
+        # 默认时间分类
         time_categories = ["日景", "清晨", "黄昏", "夜景", "阴天"]
-        style_effects = ["请先选择时间分类"]
         
+        # 初始化每个时间的选项（默认为 ["无"]）
+        time_options = {cat: ["无"] for cat in time_categories}
+        
+        # 从 JSON 加载实际风格选项
         if os.path.exists(json_path):
             try:
                 with open(json_path, 'r', encoding='utf-8') as f:
                     data = json.load(f)
                     if data and isinstance(data, dict):
-                        # 二级嵌套结构：收集所有分类下的所有风格
-                        all_styles = set()
                         for category, styles in data.items():
-                            if isinstance(styles, dict):
-                                for style_key in styles.keys():
-                                    all_styles.add(style_key)
-                        
-                        if all_styles:
-                            style_effects = sorted(list(all_styles))
-                        else:
-                            style_effects = ["Error: No valid styles found"]
+                            if category in time_options and isinstance(styles, dict):
+                                # 在该时间分类下添加具体风格（保持原有顺序）
+                                style_list = list(styles.keys())
+                                if style_list:
+                                    time_options[category] = ["无"] + style_list
+                                else:
+                                    time_options[category] = ["无", "Error: Empty category"]
                     else:
-                        style_effects = ["Error: JSON format invalid"]
+                        time_options = {cat: ["无", "Error: Invalid JSON"] for cat in time_categories}
             except Exception as e:
                 print(f"[ArchiPromptPreset] JSON Load Error: {e}")
-                style_effects = [f"Error: {str(e)}"]
+                time_options = {cat: ["无", f"Error: {str(e)}"] for cat in time_categories}
         else:
-            style_effects = ["Error: presets.json not found"]
+            time_options = {cat: ["无", "Error: presets.json not found"] for cat in time_categories}
         
         return {
             "required": {
@@ -52,12 +52,25 @@ class ArchiPromptPreset:
                     "default": "开", 
                     "tooltip": "开启后自动添加内置提示词前缀"
                 }),
-                "time_category": (time_categories, {
-                    "default": "日景", 
-                    "tooltip": "选择时间分类（第一级）"
+                "日景": (time_options["日景"], {
+                    "default": "无",
+                    "tooltip": "选择日景效果，选'无'则跳过此分类"
                 }),
-                "style_effect": (style_effects, {
-                    "tooltip": "选择具体效果（第二级），需与上方时间对应"
+                "清晨": (time_options["清晨"], {
+                    "default": "无",
+                    "tooltip": "选择清晨效果，选'无'则跳过此分类"
+                }),
+                "黄昏": (time_options["黄昏"], {
+                    "default": "无",
+                    "tooltip": "选择黄昏效果，选'无'则跳过此分类"
+                }),
+                "夜景": (time_options["夜景"], {
+                    "default": "无",
+                    "tooltip": "选择夜景效果，选'无'则跳过此分类"
+                }),
+                "阴天": (time_options["阴天"], {
+                    "default": "无",
+                    "tooltip": "选择阴天效果，选'无'则跳过此分类"
                 }),
                 "custom_prompt": ("STRING", {
                     "multiline": True, 
@@ -74,7 +87,7 @@ class ArchiPromptPreset:
     
     FUNCTION = "process_prompt"
     CATEGORY = "Architecture"
-    DESCRIPTION = "建筑提示词预设选择器（两级菜单：时间+效果，支持前缀开关与自定义输入）"
+    DESCRIPTION = "建筑提示词预设选择器（每个时间独立下拉选择，默认为无）"
 
     def extract_all_text(self, data):
         """递归提取字典中所有的字符串值"""
@@ -90,55 +103,68 @@ class ArchiPromptPreset:
                 texts.append(data.strip())
         return texts
 
-    def process_prompt(self, use_prefix, time_category, style_effect, custom_prompt):
+    def process_prompt(self, use_prefix, 日景, 清晨, 黄昏, 夜景, 阴天, custom_prompt):
         current_dir = os.path.dirname(os.path.realpath(__file__))
         json_path = os.path.join(current_dir, "presets.json")
         
-        selected_content = ""
+        # 确定用户选择了哪个时间和风格（按优先级：日景 > 清晨 > 黄昏 > 夜景 > 阴天）
+        selected_time = None
+        selected_style = None
         
-        # 检查是否为错误状态
-        if style_effect.startswith("Error:"):
-            print(f"[ArchiPromptPreset] Cannot process prompt: {style_effect}")
-            return (custom_prompt.strip() if custom_prompt else "",)
+        time_selections = {
+            "日景": 日景,
+            "清晨": 清晨,
+            "黄昏": 黄昏,
+            "夜景": 夜景,
+            "阴天": 阴天
+        }
+        
+        # 找到第一个非"无"的选择
+        for time_cat, style in time_selections.items():
+            if style != "无" and not style.startswith("Error:"):
+                selected_time = time_cat
+                selected_style = style
+                break
+        
+        # 如果没有选择任何效果，返回空或仅自定义内容
+        if selected_time is None:
+            if custom_prompt and custom_prompt.strip():
+                return (custom_prompt.strip(),)
+            return ("",)
+        
+        selected_content = ""
         
         if os.path.exists(json_path):
             try:
                 with open(json_path, 'r', encoding='utf-8') as f:
                     data = json.load(f)
                     
-                    # 二级嵌套结构访问：data[time_category][style_effect]
-                    if time_category in data and isinstance(data[time_category], dict):
-                        if style_effect in data[time_category]:
-                            entry = data[time_category][style_effect]
+                    # 二级嵌套结构访问：data[selected_time][selected_style]
+                    if selected_time in data and isinstance(data[selected_time], dict):
+                        if selected_style in data[selected_time]:
+                            entry = data[selected_time][selected_style]
                         else:
-                            print(f"[ArchiPromptPreset] Style '{style_effect}' not found in category '{time_category}'")
-                            entry = None
+                            print(f"[ArchiPromptPreset] Style '{selected_style}' not found in '{selected_time}'")
+                            return (custom_prompt.strip() if custom_prompt else "",)
                     else:
-                        # 回退：尝试扁平结构（兼容旧格式）
-                        flat_key = time_category + style_effect
-                        if flat_key in data:
-                            entry = data[flat_key]
-                            print(f"[ArchiPromptPreset] Warning: Using legacy flat key '{flat_key}'")
-                        else:
-                            print(f"[ArchiPromptPreset] Category '{time_category}' not found or invalid structure")
-                            entry = None
+                        print(f"[ArchiPromptPreset] Category '{selected_time}' not found in JSON")
+                        return (custom_prompt.strip() if custom_prompt else "",)
                     
                     # 处理找到的内容
-                    if entry is not None:
-                        if isinstance(entry, str):
-                            selected_content = entry
-                        elif isinstance(entry, dict):
-                            # 优先找 "prompt" 字段
-                            if "prompt" in entry:
-                                selected_content = entry["prompt"]
-                            else:
-                                # 递归提取所有文本并拼接
-                                all_texts = self.extract_all_text(entry)
-                                selected_content = ", ".join(all_texts)
+                    if isinstance(entry, str):
+                        selected_content = entry
+                    elif isinstance(entry, dict):
+                        # 优先找 "prompt" 字段
+                        if "prompt" in entry:
+                            selected_content = entry["prompt"]
+                        else:
+                            # 递归提取所有文本并拼接
+                            all_texts = self.extract_all_text(entry)
+                            selected_content = ", ".join(all_texts)
                                 
             except Exception as e:
                 print(f"[ArchiPromptPreset] Runtime Error: {e}")
-                selected_content = ""
+                return (custom_prompt.strip() if custom_prompt else "",)
         
         # 构建最终输出
         parts = []
@@ -149,7 +175,7 @@ class ArchiPromptPreset:
             if prefix:
                 parts.append(prefix)
         
-        # 2. 添加预设内容
+        # 2. 添加预设内容（包含时间和风格信息）
         if selected_content:
             parts.append(selected_content.strip())
         
@@ -162,10 +188,16 @@ class ArchiPromptPreset:
         
         return (final_output,)
 
+# ==============================================================================
+# ComfyUI 节点注册（必须包含，用于识别和映射）
+# ==============================================================================
 NODE_CLASS_MAPPINGS = {
     "ArchiPromptPreset": ArchiPromptPreset
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "ArchiPromptPreset": "Archi Prompt Preset"
+    "ArchiPromptPreset": "🏢 Archi Prompt Preset"
 }
+
+__version__ = "1.2.0"
+print(f"✅ Loaded ArchiPromptPreset v{__version__} - Multi-time selector with independent dropdowns")
