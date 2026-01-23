@@ -1,42 +1,701 @@
 {
-    "01_夜景风格1（雨后）": {
-        "camera_gear": {
-            "model": "Canon EOS R5",
-            "lens": "24mm",
-            "sensor": "Full-frame CMOS sensor",
-            "shutter_speed": "Slow shutter speed (approx 1/30s) to capture slight motion blur in vehicles",
-            "aperture": "f/4"
-        },
-        "lighting_setup": {
-            "time_of_day": "Dusk / Blue Hour transitioning to night (Civil Twilight)",
-            "weather": "Clear sky with strong twilight gradient (magenta/pink horizon to deep blue overhead)",
-            "lighting_direction": "Mixed lighting: Backlighting from the twilight sky, frontal/side lighting from street sources",
-            "quality": "Soft ambient skylight contrasting with hard, punctual artificial light sources",
-            "artificial_light": "Warm glowing streetlights (sodium vapor effect), Interior office illumination (3000K-4000K mixed)"
-        },
-        "color_grading": {
-            "palette": "Cinematic Teal and Orange complementary scheme. Warm tones (orange/amber) in the street level lights. Cool tones (deep blue/magenta/purple) in the upper sky and shadows.",
-            "saturation": "Rich and saturated, particularly in the warm streetlights",
-            "contrast": "High contrast with deep shadows and bright, specular highlights"
-        },
-        "texture_quality": {
-            "details": "Reflective wet asphalt reflecting lights and neon, tactile pavement textures, windows with reflection and diffuse light transmission dual effect",
-            "surface_descriptions": "Ray-traced reflections on glass, physically based rendering (PBR) material fidelity, sharp architectural edges, real indoor scenes of buildings"
-        },
-        "composition_guide": {
-            "type": "Central composition",
-            "balance": "symmetrical"
-        },
-        "atmosphere": {
-            "mood": "Cinematic, moody, bustling, dramatic, energetic",
-            "feeling": "The vibrant transition of a megacity from day to night"
-        },
-        "technical_quality": {
-            "post_processing": "Cinematic color grading with split-toning, increased clarity and local contrast, slight bloom effect around bright light sources",
-            "white_balance": "Mixed WB, leaning towards tungsten (warm) for the foreground and street lights, allowing the sky to go naturally cool/magenta",
-            "tone": "Dark and moody with crushed blacks in the periphery and bright highlights in the center",
-            "vignette": "Strong optical vignette to darken corners and focus attention on the central street scene and the main building",
-            "dynamic_range": "High dynamic range (HDR) look, preserving details in both the bright car lights and the dark building facades"
-        }
+  "日景": {
+    "日景风格1（冷调）": {
+      "camera_gear": {
+        "model": "Phase One XF IQ4 150MP Camera System (Medium Format)",
+        "lens": "Schneider Kreuznach 35mm LS f/3.5 Blue Ring Lens with Tilt-Shift movements applied for perspective correction",
+        "sensor": "CMOS Medium Format (53.4 x 40mm)",
+        "shutter_speed": "1/125 sec (ISO 50)",
+        "aperture": "f/11 (for deep depth of field and optimal sharpness across the frame)"
+      },
+      "lighting_setup": {
+        "time_of_day": "Mid-day / Early Afternoon (approx. 13:00 - 14:00), creating strong definition",
+        "weather": "Clear, cloudless blue sky with high visibility (CAVOK)",
+        "lighting_direction": "Hard direct sunlight striking from the top-right (approx. 60 degrees azimuth, 50 degrees elevation), creating distinct cast shadows and brilliant reflections",
+        "quality": "High contrast, specular, revealing form and texture through strong highlights and deep shadows",
+        "artificial_light": "None active (daylight dominance)"
+      },
+      "color_grading": {
+        "palette": "Naturalistic and vibrant architectural palette. Dominant cool cyan/blue tones from sky and glass reflections.",
+        "saturation": "Medium-High saturation, true-to-life but punchy hues",
+        "contrast": "High global contrast, with deep blacks in shadowed recesses and brilliant specular highlights on the glazed surfaces"
+      },
+      "texture_quality": {
+        "details": "Ultra-high definition photographic fidelity. Every architectural element is resolved sharply, real human face.",
+        "surface_descriptions": "Reflective glass showing distorted sky reflections; asphalt road grain; distinct individual leaves on urban greenery, fabric textures on people's clothing."
+      },
+      "composition_guide": {
+        "type": "Eye-level perspective (approx. 1.7m height)",
+        "balance": "Asymmetrical composition."
+      },
+      "atmosphere": {
+        "mood": "Imposing, clean, modern, professional, clarity, aspirational",
+        "feeling": "A sense of impressive scale and contemporary urban development under idealized conditions."
+      },
+      "technical_quality": {
+        "post_processing": "Rigorous architectural cleanup. Full keystone correction (verticals perfectly parallel). Chromatic aberration removal. Highlight recovery applied to glass reflections to prevent clipping. Shadow detail lifted slightly in the lower podium area.",
+        "white_balance": "Daylight balanced (5500K), neutral gray point",
+        "tone": "Slight S-curve applied for tonal separation, emphasizing mid-tone details in the building materials",
+        "vignette": "Zero vignetting, edge-to-edge brightness consistency",
+        "dynamic_range": "Extremely high dynamic range, achieved through exposure bracketing and blending to capture details from the brightest cloudless sky down to the deepest street-level shadows."
+      }
+    },
+    "日景风格2（冷调）": {
+      "camera_gear": {
+        "model": "Phase One IQ4 150MP",
+        "lens": "Rodenstock HR Digaron-W 32mm f/4 Tilt-Shift",
+        "sensor": "Medium Format",
+        "shutter_speed": "1/250s",
+        "aperture": "f/11"
+      },
+      "lighting_setup": {
+        "time_of_day": "Mid-morning, approx 10:00 AM",
+        "weather": "Clear dark blue sky, cloudless, high visibility",
+        "lighting_direction": "Direct sunlight, 45-degree angle front-side lighting",
+        "quality": "Hard light, shadows on foreground, high contrast",
+        "artificial_light": "pure daylight"
+      },
+      "color_grading": {
+        "palette": "Cool blues",
+        "saturation": "High saturation (especially sky blue)",
+        "contrast": "High contrast, deep blacks in shadows"
+      },
+      "texture_quality": {
+        "details": "8k resolution, hyper-realistic, real human face",
+        "surface_descriptions": "glass with high reflective, organic tree leaf texture, fabric textures on people's clothing"
+      },
+      "composition_guide": {
+        "type": "2-point perspective with vertical correction",
+        "balance": "Asymmetrical composition"
+      },
+      "atmosphere": {
+        "mood": "Corporate, futuristic, imposing, clean",
+        "feeling": "Technological precision"
+      },
+      "technical_quality": {
+        "post_processing": "Perspective control (keystone correction), dehaze, high sharpness",
+        "white_balance": "Daylight balanced (5500K)",
+        "tone": "Commercial architectural photography style",
+        "vignette": "None",
+        "dynamic_range": "High dynamic range (HDR) to retain details in highlights and shadows"
+      }
+    },
+    "日景风格3（侧光）": {
+      "camera_gear": {
+        "model": "Phase One XF IQ4 150MP",
+        "lens": "Schneider Kreuznach 35mm LS f/3.5 Blue Ring (Tilt-Shift lens for vertical perspective correction)",
+        "sensor": "Medium Format CMOS",
+        "shutter_speed": "1/500s (to freeze the motion of the pedestrian and plnats)",
+        "aperture": "f/11 (for deep depth of field and edge-to-edge sharpness)"
+      },
+      "lighting_setup": {
+        "time_of_day": "Mid-morning, approx 10:30 AM",
+        "weather": "Crystal clear blue sky, zero cloud coverage, high visibility",
+        "lighting_direction": "High-angle side-frontal sunlight (creating defined, hard shadows from the trees onto the building facade)",
+        "quality": "Hard light, high contrast, crisp sunbeams",
+        "artificial_light": "100% natural daylight setup"
+      },
+      "color_grading": {
+        "palette": "vivid azure sky blue, natural foliage green",
+        "saturation": "Natural to slightly vibrant (ArchDaily style)",
+        "contrast": "High contrast with deep, cool shadows"
+      },
+      "texture_quality": {
+        "details": "8k resolution, photorealistic material definition, real human face",
+        "surface_descriptions": "reflective glass showing sky reflections, organic leaf textures, fabric textures on people's clothing"
+      },
+      "composition_guide": {
+        "type": "2-point perspective with vertical correction",
+        "balance": "Asymmetrical narrative balance (pedestrian in foreground anchoring the scale against the monumental building mass)"
+      },
+      "atmosphere": {
+        "mood": "Professional, operational, energetic, clean",
+        "feeling": "Contemporary urban efficiency, bright and airy"
+      },
+      "technical_quality": {
+        "post_processing": "Keystone correction (vertical lines parallel), chromatic aberration removal, unsharp mask applied",
+        "white_balance": "Daylight 5500K (neutral whites)",
+        "tone": "Bright, exposed for the highlights to keep the building pristine",
+        "vignette": "None",
+        "dynamic_range": "High Dynamic Range (HDR) to retain details in both the facade and the cast shadows"
+      }
+    },
+    "日景风格4（暖调）": {
+      "camera_gear": {
+        "model": "Canon EOS R5 (High-resolution full-frame mirrorless for maximum detail)",
+        "lens": "Canon RF 15-35mm f/2.8L IS USM @ 24mm",
+        "sensor": "Full-frame CMOS, 45 Megapixels",
+        "shutter_speed": "1/1000 sec (To freeze the motion of joggers and people active)",
+        "aperture": "f/13 (Deep depth of field, ensuring sharpness building facade)"
+      },
+      "lighting_setup": {
+        "time_of_day": "Late morning, approx 11:00 AM (High sun angle creating distinct but not overly harsh shadows)",
+        "weather": "Clear sunny skies with excellent visibility",
+        "lighting_direction": "Strong directional sunlight from the front-right",
+        "quality": "Hard, direct daylight creating high contrast and brilliant reflections on the building's glass",
+        "artificial_light": "None (Relies entirely on natural daylight)"
+      },
+      "color_grading": {
+        "palette": "Vibrant and clean. Dominated by vivid blues (sky and reflections)",
+        "saturation": "High saturation",
+        "contrast": "High contrast with crisp highlights and deep, defined shadows"
+      },
+      "texture_quality": {
+        "details": "Hyper-realistic 8K resolution rendering. Sharp focus on all elements, real human face.",
+        "surface_descriptions": "Highly reflective glass mirroring the sky and trees, fabric textures on people's clothing."
+      },
+      "composition_guide": {
+        "type": "Wide-angle landscape exterior photograph, eye-level perspective.",
+        "balance": "Asymmetrical narrative balance"
+      },
+      "atmosphere": {
+        "mood": "Energetic, vibrant, optimistic, modern, and clean."
+      },
+      "technical_quality": {
+        "post_processing": "Perspective correction applied (verticals are perfectly straight/keystoning fix). Clean, noise-free image with high sharpness.",
+        "white_balance": "Daylight balanced (approx 5500K), neutral whites.",
+        "tone": "Bright, high-key lighting, exposed for highlights.",
+        "vignette": "Minimal to none.",
+        "dynamic_range": "High Dynamic Range (HDR) look, retaining detail in both the building surfaces and the shadows beneath the trees."
+      }
+    },
+    "日景风格5（逆光）": {
+      "camera_gear": {
+        "model": "Sony Alpha 7R V (61MP for extreme textural detail in foliage and facade)",
+        "lens": "Sony FE 50mm f/1.2 GM (simulated 45mm Tilt-Shift effect for vertical correction)",
+        "sensor": "Full-frame Exmor R CMOS",
+        "shutter_speed": "1/1250 sec (Fast shutter to freeze the pedestrians)",
+        "aperture": "f/8.0 (Balanced aperture to keep the pedestrians sharp while maintaining definition in the building backdrop)"
+      },
+      "lighting_setup": {
+        "time_of_day": "Noon, approx 1:00 PM",
+        "weather": "Sunny with light haze, soft atmospheric perspective",
+        "lighting_direction": "Back lighting (Contre-jour/Backlit)",
+        "quality": "Soft ambient bounce light on the building's back",
+        "artificial_light": "None"
+      },
+      "color_grading": {
+        "palette": "Eco-futurism. Cool cyan/blue tones for the building's glass.",
+        "saturation": "Natural but vibrant in the highlights",
+        "contrast": "Medium-High"
+      },
+      "texture_quality": {
+        "details": "High-frequency detail in the building's glass and the feathery texture of the reeds, real human face.",
+        "surface_descriptions": "Low-reflection glass, fabric textures on people's clothing"
+      },
+      "composition_guide": {
+        "type": "Vertical (Portrait) Architectural Landscape",
+        "balance": "Layered Depth composition: Foreground-> Midground (building) -> Background (Sky). "
+      },
+      "atmosphere": {
+        "mood": "Serene, sustainable, active, harmonious",
+        "feeling": "A perfect integration."
+      },
+      "technical_quality": {
+        "post_processing": "Vertical perspective correction (Keystone correction), Shadow recovery on the building's face.",
+        "white_balance": "Daylight (shifted slightly cooler for the building, 2000K)",
+        "tone": "Rich mid-tones with glowing highlights",
+        "vignette": "Slight optical vignetting to focus attention on the center",
+        "dynamic_range": "Very High (handling the bright backlit sky and the building in shadow)"
+      }
     }
+  },
+  "清晨": {
+    "清晨风格1（雾天）": {
+      "camera_gear": {
+        "model": "Hasselblad X2D 100C",
+        "lens": "Hasselblad XCD 45mm f/4 P",
+        "sensor": "100MP BSI CMOS",
+        "shutter_speed": "1/60 sec",
+        "aperture": "f/8 (Sufficient depth of field while avoiding diffraction)"
+      },
+      "lighting_setup": {
+        "time_of_day": "Early Morning，approx 7:00 AM",
+        "weather": "Thin Mist on the ground level",
+        "lighting_direction": "Morning sunlight (Low angle sunlight passing through thin mist)",
+        "quality": "soft.",
+        "artificial_light": "Soft internal glow"
+      },
+      "color_grading": {
+        "palette": "Dominant tones: Cool Fog Grey (ground level).",
+        "saturation": "Low saturation / Desaturated (Morandi color palette)",
+        "contrast": "Low global contrast (High Key), but rich local contrast in textures"
+      },
+      "texture_quality": {
+        "details": "Rim lighting on building's facade, real human face.",
+        "surface_descriptions": "Translucent glass facade, fabric textures on people's clothing."
+      },
+      "composition_guide": {
+        "type": "Eye-level symmetrical composition.",
+        "balance": "Perfect reflection symmetry. The lone figure adds a Zen-like scale reference."
+      },
+      "atmosphere": {
+        "mood": "Ethereal, Silence, Zen, Dreamy, Solitary.",
+        "feeling": "A peaceful morning scene. Poetic and contemplative."
+      },
+      "technical_quality": {
+        "post_processing": "Dehaze, Lifted blacks (Matte look), Soft sharpening.",
+        "white_balance": "Cool / Neutral (approx 5000K) to maintain the clean, morning look.",
+        "tone": "Soft tones, smooth gradients without banding.",
+        "vignette": "White vignette.",
+        "dynamic_range": "Medium (Compressed by the fog, focusing on mid-tones)."
+      }
+    },
+    "清晨风格2（晴天）": {
+      "camera_gear": {
+        "model": "Fujifilm GFX 100S (Medium Format for superior color depth and dynamic range)",
+        "lens": "Fujinon GF 32-64mm f/4 R LM WR @ 45mm (Natural perspective, mimicking human vision)",
+        "sensor": "102MP BSI CMOS",
+        "shutter_speed": "1/400 sec",
+        "aperture": "f/11 (Deep depth of field, keeping the foreground and the building both relatively sharp)"
+      },
+      "lighting_setup": {
+        "time_of_day": "Early morning, approx 6:30 PM",
+        "weather": "Clear sky with a deep blue gradient, excellent visibility",
+        "lighting_direction": "Side-lighting from the right",
+        "quality": "Warm, directional sunlight with distinct shadows, enhancing the volume of the architecture",
+        "artificial_light": "None (Pure natural lighting)"
+      },
+      "color_grading": {
+        "palette": "Complementary Harmony.",
+        "saturation": "Natural to Vibrant (Fujifilm Velvia film simulation style)",
+        "contrast": "Medium-High (Clear distinction between sunlit surfaces and shadows)"
+      },
+      "texture_quality": {
+        "details": "Rich textural contrast between organic and inorganic materials, real human face.",
+        "surface_descriptions": "Translucent glass，glass reflects the sky and surrounding environment, fabric textures on people's clothing."
+      },
+      "composition_guide": {
+        "type": "Eye-level perspective with foreground framing (Repoussoir).",
+        "balance": "Asymmetrical balance. "
+      },
+      "atmosphere": {
+        "mood": "Peaceful, inviting, warm, community-centric.",
+        "feeling": "A relaxed morning. The coexistence of nature and modern design."
+      },
+      "technical_quality": {
+        "post_processing": "Highlight protection on the translucent glass, slight vibrance boost.",
+        "white_balance": "Daylight 6000K (Slightly warm shift to enhance the sunlight)",
+        "tone": "Rich and full-bodied colors.",
+        "vignette": "None.",
+        "dynamic_range": "High (Capturing detail in the bright sky)."
+      }
+    }
+  },
+  "黄昏": {
+    "黄昏风格1（蓝调）": {
+      "camera_gear": {
+        "model": "Phase One XF IQ4 150MP (Medium Format for ultimate dynamic range and resolution)",
+        "lens": "Rodenstock 32mm f/4 HR Digaron-W",
+        "sensor": "Backside Illuminated (BSI) CMOS, 151 Megapixels",
+        "shutter_speed": "1/125 sec (Balanced exposure to capture the ambient light without motion blur)",
+        "aperture": "f/11 (Small aperture to ensure edge-to-edge sharpness across the building)"
+      },
+      "lighting_setup": {
+        "time_of_day": "Golden Hour, approx 5:30 PM (Sun is low on the horizon)",
+        "weather": "Clear sky with wispy cirrus clouds",
+        "lighting_direction": "Low-angle Side Lighting (Raking light on the building's facade)",
+        "quality": "Warm, directional sunlight creating strong rhythmic shadows on the building",
+        "artificial_light": "white interior lighting beginning to turn on (Blue hour transition starting in shadows)"
+      },
+      "color_grading": {
+        "palette": "Complementary Blue/Orange scheme. Warm Golden hues on the sunlit facade vs. Cool Blue shadows and sky.",
+        "saturation": "Vibrant but true-to-life",
+        "contrast": "Medium Global Contrast (emphasizing the drama of the lighting)"
+      },
+      "texture_quality": {
+        "details": "Sharp definition of architectural materials，Real world materials, real human face.",
+        "surface_descriptions": "Reflective glass, soft organic trees, fabric textures on people's clothing."
+      },
+      "composition_guide": {
+        "type": "Street-level Two-point Perspective.",
+        "balance": "Asymmetrical balance."
+      },
+      "atmosphere": {
+        "mood": "Corporate, Dynamic, Aspiring, Grand.",
+        "feeling": "The end of a productive workday in a high-tech district. A sense of scale and modern efficiency."
+      },
+      "technical_quality": {
+        "post_processing": "Keystone correction (100% vertical alignment), Shadow recovery to reveal details in the dark glass, Highlight preservation on the sunlit edges.",
+        "white_balance": "Daylight 5600K (Preserving the warmth of the sunset)",
+        "tone": "Rich shadows and glowing highlights.",
+        "vignette": "Very subtle to focus attention center-frame.",
+        "dynamic_range": "High Dynamic Range (HDR) to handle the intense sun reflection and deep shadows."
+      }
+    },
+    "黄昏风格2（黄金调）": {
+      "camera_gear": {
+        "model": "Sony Alpha 7R V (61MP Full-frame sensor for high dynamic range in backlit situations)",
+        "lens": "Canon TS-E 24mm f/3.5L II (via adapter) - Tilt-Shift lens essential for keeping vertical lines parallel",
+        "sensor": "Back-illuminated CMOS (Exmor R) to handle the extreme contrast of looking into the sun",
+        "shutter_speed": "1/250 sec (To balance the bright sun and freeze the movement of pedestrians\n)",
+        "aperture": "f/16 (Small aperture is critical here to create the distinct 'Sunstar' / diffraction spike effect on the sun burst)"
+      },
+      "lighting_setup": {
+        "time_of_day": "Golden Hour, approx 5:00 PM (Low solar angle)",
+        "weather": "Clear sunny sky with high visibility",
+        "lighting_direction": "Direct Back-lighting / Contre-jour (Sun positioning between buildings creates a dramatic flare)",
+        "quality": "High-contrast, hard light creating long shadows and glowing edges (rim light) on the foreground",
+        "artificial_light": "None, relying entirely on the dramatic natural solar flare"
+      },
+      "color_grading": {
+        "palette": "Dual-tone harmony. Cool hues (Cyan/Blue) for the building's glass vs. Warm hues (Gold/Lime Green) for the sunlit foreground.",
+        "saturation": "Vibrant, especially in the greens and the golden sunlight spill",
+        "contrast": "High Dynamic Range (HDR) style, ensuring the foreground figures aren't silhouettes while keeping the sky detail"
+      },
+      "texture_quality": {
+        "details": "Real world materials,real human face.",
+        "surface_descriptions": "Reflective glazed glass, soft backlit foreground, fabric textures on people's clothing."
+      },
+      "composition_guide": {
+        "type": "Vertical (Portrait) Urban Landscape",
+        "balance": "Rule of Thirds. The sunburst acts as a visual anchor point on the right third line."
+      },
+      "atmosphere": {
+        "mood": "Aspirational, Energetic, Harmonious, Warm.",
+        "feeling": "The perfect balance of high-density urban living and nature. A 'City in a Garden' vibe."
+      },
+      "technical_quality": {
+        "post_processing": "Keystone correction (100% vertical alignment), De-ghosting (to remove lens flare artifacts), Shadow lifting in the foreground, Highlight recovery in the sky.",
+        "white_balance": "Daylight 5500K (leaning slightly warm to accentuate the golden hour feel)",
+        "tone": "Luminous and airy, despite the strong contrast.",
+        "vignette": "None.",
+        "dynamic_range": "Extreme (Required to capture detail in the sun's core and the building's shaded face)."
+      }
+    },
+    "黄昏风格3（紫调）": {
+      "camera_gear": {
+        "model": "Phase One XT (Field Camera specialized for architecture)",
+        "lens": "Rodenstock 32mm f/4 HR Digaron-W (Wide-angle Tilt-Shift, critical for capturing the building while correcting vertical perspective)",
+        "sensor": "IQ4 150MP Achromatic (or Tricolor) Back",
+        "shutter_speed": "2.5 sec (Long exposure on tripod. Necessary to gather enough ambient light from the sky)",
+        "aperture": "f/13 (Small aperture to ensure front-to-back sharpness)"
+      },
+      "lighting_setup": {
+        "time_of_day": "Golden Hour, approx 6:00 PM",
+        "weather": "Clear sky with a smooth deep violet-to-light violet gradient",
+        "lighting_direction": "Warm sun lighting on the horizon, Warm low-level indoor lighting.",
+        "quality": "Reflection of the sky is visible on the glass.",
+        "artificial_light": "Cool 4500K street lights"
+      },
+      "color_grading": {
+        "palette": "Cinematic Blue/Gold Contrast. Deep royal Blue and Violet (Sky). Subtle Magenta reflections.",
+        "saturation": "High Saturation (emphasizing the glow)",
+        "contrast": "High Color Contrast (Temperature based) but balanced Tone Contrast (HDR processing to avoid crushed blacks)"
+      },
+      "texture_quality": {
+        "details": "Real world materials,real human face.",
+        "surface_descriptions": "Highly reflective glass reflects the sky,fabric textures on people's clothing."
+      },
+      "composition_guide": {
+        "type": "Wide-angle Elevation View (slightly elevated from ground level)",
+        "balance": "Rhythmic Symmetry."
+      },
+      "atmosphere": {
+        "mood": "Premium, Busy, Transparent, High-tech.",
+        "feeling": "energy and openness."
+      },
+      "technical_quality": {
+        "post_processing": "Exposure Blending, Color Temperature separation, Vertical correction.",
+        "white_balance": "Gold and turn the twilight sky into a light blue.",
+        "tone": "Deep blue but detailed shadows.",
+        "vignette": "Subtle darkening at the top corners to frame the sky.",
+        "dynamic_range": "Ultra High (The most challenging lighting scenario for a sensor)."
+      }
+    }
+  },
+  "夜景": {
+    "夜景风格1（蓝调）": {
+      "camera_gear": {
+        "model": "Sony Alpha 7R V (61MP) ",
+        "lens": "Sony FE 24mm f/1.4 GM (stopped down) for vertical perspective control",
+        "sensor": "Full-frame Exmor R CMOS (High ISO performance for low-light clarity)",
+        "shutter_speed": "10 sec (Long exposure on tripod to soak up the ambient blue skylight, motion_blur.)",
+        "aperture": "f/11 (Deep depth of field to ensure the foreground corrugated metal and the distant building facade are both razor sharp)"
+      },
+      "lighting_setup": {
+        "time_of_day": "Blue Hour / Twilight, approx 20-30 mins after sunset",
+        "weather": "Clear, deep blue cloudless sky",
+        "lighting_direction": "Mixed Lighting. Soft ambient cool skylight from above vs. Directional warm interior spill, car light,light strip formed by the long exposure car headlight along the road",
+        "quality": "The building glows warmly, illuminating the building's facade.",
+        "artificial_light": "Warm Tungsten (2000K) interior lighting strip lights under eaves, warm landscape uplights,downlight illuminating the trees."
+      },
+      "color_grading": {
+        "palette": "Deep Cobalt Blue (Sky) vs light Gold (Interior). A classic complementary color scheme.",
+        "saturation": "Rich and Saturated.",
+        "contrast": "High micro-contrast to bring out textures, but balanced global contrast to avoid losing shadow details in the building"
+      },
+      "texture_quality": {
+        "details": "Extreme tactile contrast,Real world materials,real human face.",
+        "surface_descriptions": "Building's glass reflecs the sky and surroundings ,fabric textures on people's clothing ."
+      },
+      "composition_guide": {
+        "type": "Street-level 3/4 Angle view.",
+        "balance": "Asymmetrical Juxtaposition."
+      },
+      "atmosphere": {
+        "mood": "Tranquil, Welcoming, Sophisticated, Nostalgic.",
+        "feeling": "The warmth of the building promises comfort in the cool night."
+      },
+      "technical_quality": {
+        "post_processing": "Perspective Correction (Vertical lines parallel), Highlight suppression , Shadow recovery .",
+        "white_balance": "Tungsten Priority (approx 3200K) - This turns the interior lights neutral/warm and forces the sky into a deep, pleasing blue.",
+        "tone": "Warm shadows within the building, cool shadows in the street.",
+        "vignette": "Slight optical vignette to focus the eye on the lit entrance.",
+        "dynamic_range": "High Dynamic Range (HDR) exposure blending required to handle the bright signage and dark foreground,Vehicle motion blur effect."
+      }
+    },
+    "夜景风格2（灰调）": {
+      "camera_gear": {
+        "model": "Phase One XT Camera System",
+        "lens": "Rodenstock HR Digaron-W 32mm f/4 (with 15mm vertical rise/shift)",
+        "sensor": "IQ4 150MP Achromatic/Trichromatic Back",
+        "shutter_speed": "1/4 sec (exposure balanced for interior lights, tripod mounted)",
+        "aperture": "f/11",
+        "iso": "ISO 50"
+      },
+      "lighting_setup": {
+        "time_of_day": "Civil Twilight (Overcast)",
+        "weather": "Cold, grey, flat sky, diffused light",
+        "lighting_direction": "Frontal flat ambient fill vs. Strong internal transmission",
+        "quality": "Shadowless environmental light allowing the internal lighting to define the structure",
+        "artificial_light": "6000K bright neutral white interior office strip lights, fully illuminated floors"
+      },
+      "color_grading": {
+        "palette": "Cold Monochrome with Luminous Highlights (Bright White lights)",
+        "saturation": "Low saturation",
+        "contrast": "High local contrast"
+      },
+      "texture_quality": {
+        "details": "High-reflection detail in the building's glass and the feathery texture of the reeds, real human face.",
+        "surface_descriptions": "Steel blue glass, fabric textures on people's clothing."
+      },
+      "composition_guide": {
+        "type": "Frontal View (One-point perspective)",
+        "balance": "Perfectly symmetrical horizontal layering (Stacked composition)",
+        "framing": "Full frontal capture with zero keystoning (vertical lines are perfectly parallel)"
+      },
+      "atmosphere": {
+        "mood": "Rational, Clinical, Transparent, Ordered",
+        "feeling": "The efficiency of modern corporate structure, a beacon in evening"
+      },
+      "technical_quality": {
+        "post_processing": "Perspective correction (Zero distortion), highlight compression to prevent interior blowout",
+        "white_balance": "5000K (Neutral, keeping the sky grey and lights white)",
+        "tone": "Linear curve, emphasizing geometric repetition",
+        "vignette": "Flat field illumination",
+        "dynamic_range": "High Dynamic Range (HDR) needed to balance the facade and interior"
+      }
+    },
+    "夜景风格3（多云）": {
+      "camera_gear": {
+        "model": "Phase One XF IQ4 150MP Camera System",
+        "lens": "Schneider Kreuznach 35mm LS f/3.5 Blue Ring (Tilt-Shift aesthetic)",
+        "sensor": "Medium Format (53.4 x 40mm) Trichromatic",
+        "shutter_speed": "1/4 sec (slight motion blur on vehicles)",
+        "aperture": "f/11 (deep depth of field)",
+        "iso": "ISO 50 (clean, noise-free image)"
+      },
+      "lighting_setup": {
+        "time_of_day": "Evening,approx 10:00 PM",
+        "weather": "Black evening cloudy sky, calm atmosphere",
+        "lighting_direction": "Internal warm architectural lighting",
+        "quality": "Soft, diffused global illumination on building facade",
+        "artificial_light": "3200K Tungsten interior lights."
+      },
+      "color_grading": {
+        "palette": "Complementary Teal and Orange (Black sky vs. Amber/Gold interior lights)",
+        "saturation": "Vibrant but natural",
+        "contrast": "High micro-contrast, rich blacks in shadows without crushing details"
+      },
+      "texture_quality": {
+        "details": "Ultra-sharp 8k resolution, realistic material definitions,real human face.",
+        "surface_descriptions": "Reflective building's glass,fabric textures on people's clothing."
+      },
+      "composition_guide": {
+        "type": "Street level eye-view, 2-point perspective with vertical correction",
+        "balance": "Center-weighted subject with active foreground elements (cars, pedestrians)",
+        "framing": "Full height vertical capture, leaving breathing room in the sky"
+      },
+      "atmosphere": {
+        "mood": "Cosmopolitan, Sophisticated, Busy yet Serene",
+        "feeling": "High-end corporate dynamism, urban night life elegance"
+      },
+      "technical_quality": {
+        "post_processing": "Architectural linear workflow, perspective control, chromatic aberration correction",
+        "white_balance": "4500K (balancing cool exterior and warm interior)",
+        "tone": "S-Curve for dramatic mid-tone separation",
+        "vignette": "Subtle optical vignette reduction",
+        "dynamic_range": "High Dynamic Range (HDR) exposure blending"
+      }
+    },
+    "夜景风格4（雨后）": {
+      "camera_gear": {
+        "model": "Hasselblad H6D-100c",
+        "lens": "Hasselblad HCD 24mm f/4.8 (perspective correction)",
+        "sensor": "100MP Medium Format CMOS",
+        "shutter_speed": "1/30 sec (balancing static architecture with slight movement of crowd)",
+        "aperture": "f/8.0 (optimal sharpness for building and foreground)",
+        "iso": "ISO 64"
+      },
+      "lighting_setup": {
+        "time_of_day": "Late Blue Hour / Dusk (post-sunset deep grey sky)",
+        "weather": "Overcast, dramatic stormy black clouds, post-rain atmosphere with locally wet ground",
+        "lighting_direction": "Soft diffuse cool skylight from above vs. glowing warm interior spill",
+        "quality": "Cinematic high-contrast, volumetric lighting simulation",
+        "artificial_light": "3000K warm interior office lighting, bright podium atrium glow, streetlights acting as rim lights"
+      },
+      "color_grading": {
+        "palette": "Teal and Orange (Deep grey sky vs. Amber/Gold warm lights)",
+        "saturation": "Rich and vibrant, emphasized luminous highlights",
+        "contrast": "High, with deep shadows in the sky but preserved details in the glass"
+      },
+      "texture_quality": {
+        "details": "Hyper-realistic architectural materials, 8k resolution,real human face.",
+        "surface_descriptions": "Reflective blue building's glass, fabric textures on people's clothing."
+      },
+      "composition_guide": {
+        "type": "Eye-level perspective (human scale)",
+        "balance": "Asymmetrical balance",
+        "framing": "The warmth of the building promises comfort in the cool night"
+      },
+      "atmosphere": {
+        "mood": "Dramatic, Majestic, Commercial",
+        "feeling": "Aspirational lifestyle"
+      },
+      "technical_quality": {
+        "post_processing": "vertical perspective correction (shift lens effect), bloom on lights",
+        "white_balance": "5200K (neutralizing the street lights while keeping sky dark blue)",
+        "tone": "High dynamic range (HDR), crushed blacks in upper sky for drama",
+        "vignette": "Subtle darkening at top corners to focus attention",
+        "dynamic_range": "Wide exposure latitude to capture bright lobby and dark clouds simultaneously"
+      }
+    }
+  },
+  "阴天": {
+    "阴天风格1（亮调）": {
+      "camera_gear": {
+        "model": "Fujifilm GFX 100S",
+        "lens": "Fujinon GF 32-64mm f/4 R LM WR (set at 35mm equivalent)",
+        "sensor": "Medium Format (43.8 x 32.9mm) CMOS",
+        "shutter_speed": "1/125 sec",
+        "aperture": "f/8.0 (optimal aperture for architectural depth and corner sharpness)",
+        "iso": "ISO 200 (maintaining texture in the facade)"
+      },
+      "lighting_setup": {
+        "time_of_day": "Mid-afternoon (Overcast)",
+        "weather": "Cloudy, soft diffuse sky, no direct sunlight, even illumination",
+        "lighting_direction": "Top-down global softbox effect (hemispherical lighting)",
+        "quality": "Shadowless, flat lighting that emphasizes form and local material color",
+        "artificial_light": "None / Natural daylight only (lights are off, emphasizing the building's physical volume)"
+      },
+      "color_grading": {
+        "palette": "Monochromatic Greyscale with Natural Greens (Dark Grey architecture vs. lush green trees)",
+        "saturation": "Natural to slightly desaturated, realistic tones",
+        "contrast": "Medium contrast, focusing on the tonal separation between the building and the bright grey sky"
+      },
+      "texture_quality": {
+        "details": "High-fidelity surface textures, 8k resolution",
+        "surface_descriptions": "Reflective tinted glass windows reflecting the clouds, rough asphalt road, natural tree foliage"
+      },
+      "composition_guide": {
+        "type": "2-point perspective",
+        "balance": "Asymmetrical narrative balance (pedestrian in foreground anchoring the scale against the monumental building mass)"
+      },
+      "atmosphere": {
+        "mood": "Quiet, Industrial, Everyday Reality",
+        "feeling": "Poetic and contemplative"
+      },
+      "technical_quality": {
+        "post_processing": "Naturalistic editing, low clarity to keep softness, perspective correction for vertical lines",
+        "white_balance": "6000K (Cool/Neutral daylight)",
+        "tone": "Linear response curve, preserving details in the dark facade shadows",
+        "vignette": "Zero vignette (documentary style)",
+        "dynamic_range": "Standard dynamic range, realistic falloff"
+      }
+    },
+    "阴天风格2（暗调）": {
+      "camera_gear": {
+        "model": "Sony A7R V",
+        "lens": "Sony FE 24-70mm f/2.8 GM II (at 24mm wide end)",
+        "sensor": "Full Frame 61MP Exmor R CMOS",
+        "shutter_speed": "1/200 sec",
+        "aperture": "f/8.0 (standard architectural aperture for depth of field)",
+        "iso": "ISO 100 (balancing exposure under overcast sky)"
+      },
+      "lighting_setup": {
+        "time_of_day": "Late Afternoon (Overcast)",
+        "weather": "Cloudy sky, with a smooth black-to-dark grey gradient.even illumination without harsh shadows",
+        "lighting_direction": "Global illumination",
+        "quality": "Neutral lighting that emphasizes material transparency and reflection, high contrast.",
+        "artificial_light": "Minimal/Off (relying purely on natural ambient light for realism)"
+      },
+      "color_grading": {
+        "palette": "Naturalistic Cool Tones (Dark sky, Dark Blue glass, Deep Green foliage)",
+        "saturation": "True-to-life, desaturated sky but vibrant greens",
+        "contrast": "Hign contrast (preserving details in both bright clouds and dark street corners)"
+      },
+      "texture_quality": {
+        "details": "High definition glass reflections, realistic street clutter",
+        "surface_descriptions": "Highly reflective glass reflecting the cloudy sky and adjacent buildings, natural organic tree leaves"
+      },
+      "composition_guide": {
+        "type": "Street level eye-view, 2-point perspective",
+        "balance": "None",
+        "framing": "None"
+      },
+      "atmosphere": {
+        "mood": "Objective, Professional, Realistic",
+        "feeling": "Repression"
+      },
+      "technical_quality": {
+        "post_processing": "Minimal processing, natural white balance, lens correction applied",
+        "white_balance": "6000K (Daylight/Cloudy)",
+        "tone": "Linear curve, faithful reproduction of grey values",
+        "vignette": "None (edge-to-edge brightness)",
+        "dynamic_range": "Standard dynamic range capturing the nuances of the dark sky"
+      }
+    },
+    "阴天风格3（重调）": {
+      "camera_gear": {
+        "model": "Leica S3",
+        "lens": "Leica Summarit-S 35mm f/2.5 ASPH (CS) (Wide angle equivalent to 28mm)",
+        "sensor": "64MP Medium Format Pro Format (30 x 45mm)",
+        "shutter_speed": "1/1000 sec (High speed to freeze the walking silhouette against bright background)",
+        "aperture": "f/11",
+        "iso": "ISO 100"
+      },
+      "lighting_setup": {
+        "time_of_day": "Mid-afternoon",
+        "weather": "Dramatic stormy sky, heavy cumulus clouds with piercing direct sunlight patches",
+        "lighting_direction": "High-angle side lighting (Raking light)",
+        "quality": "Hard, soft sunlight contrasting with deep, heavy cloud shadows",
+        "artificial_light": "None (Pure natural dramatic lighting)"
+      },
+      "color_grading": {
+        "palette": "Charcoal shadows, Navy/White sky",
+        "saturation": "Low saturation on architecture",
+        "contrast": "Very High"
+      },
+      "texture_quality": {
+        "details": "Sharp definition of architectural materials，Real world materials, real human face.",
+        "surface_descriptions": "Reflective glass,fabric textures on people's clothing, volumetric fluffy clouds"
+      },
+      "composition_guide": {
+        "type": "Subtractive Framing / Geometric Abstraction",
+        "balance": "Asymmetrical balance."
+      },
+      "atmosphere": {
+        "mood": "Monumental, Solitary, Dramatic, Serious",
+        "feeling": "The weight of architecture, a moment of clarity amidst chaos"
+      },
+      "technical_quality": {
+        "post_processing": "Black & White conversion style grading but keeping subtle color, dodge and burn to enhance geometry",
+        "white_balance": "5500K (Daylight)",
+        "tone": "High contrast curve, crushed blacks for silhouettes",
+        "vignette": "Natural optical shading used as a compositional tool",
+        "dynamic_range": "High Dynamic Range needed to retain cloud detail while keeping shadows rich"
+      }
+    }
+  }
 }
