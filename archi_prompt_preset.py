@@ -5,12 +5,9 @@ class ArchiPromptPreset:
     """
     ComfyUI Node: ArchiPromptPreset
     建筑提示词预设选择器，支持两级菜单（时间+效果）、内置前缀开关及自定义提示词输入。
-    适配扁平化 JSON 结构：{"日景风格1（冷调）": {...}, ...}
+    适配二级嵌套 JSON 结构：{"日景": {"风格1（冷调）": {...}}, ...}
     """
 
-    # ==============================================================================
-    # 🛠️ [配置区] 内置固定提示词
-    # ==============================================================================
     FIXED_PREFIX = "Transform the image into a real-life photo according to the following requirements, strictly maintain the consistency of the image content, strictly maintain the consistency of the buildings and environment in the image, and do not change the shooting angle and composition of the image."
 
     def __init__(self):
@@ -25,21 +22,18 @@ class ArchiPromptPreset:
         time_categories = ["日景", "清晨", "黄昏", "夜景", "阴天"]
         style_effects = ["请先选择时间分类"]
         
-        # 尝试从 JSON 提取所有风格名称（第二级）
         if os.path.exists(json_path):
             try:
                 with open(json_path, 'r', encoding='utf-8') as f:
                     data = json.load(f)
                     if data and isinstance(data, dict):
+                        # 二级嵌套结构：收集所有分类下的所有风格
                         all_styles = set()
-                        for key in data.keys():
-                            if isinstance(key, str):
-                                for cat in time_categories:
-                                    if key.startswith(cat):
-                                        style_part = key[len(cat):]
-                                        if style_part:
-                                            all_styles.add(style_part)
-                                        break
+                        for category, styles in data.items():
+                            if isinstance(styles, dict):
+                                for style_key in styles.keys():
+                                    all_styles.add(style_key)
+                        
                         if all_styles:
                             style_effects = sorted(list(all_styles))
                         else:
@@ -82,8 +76,8 @@ class ArchiPromptPreset:
     CATEGORY = "Architecture"
     DESCRIPTION = "建筑提示词预设选择器（两级菜单：时间+效果，支持前缀开关与自定义输入）"
 
-    # 辅助函数：递归提取字典中所有的字符串值
     def extract_all_text(self, data):
+        """递归提取字典中所有的字符串值"""
         texts = []
         if isinstance(data, dict):
             for value in data.values():
@@ -112,19 +106,21 @@ class ArchiPromptPreset:
                 with open(json_path, 'r', encoding='utf-8') as f:
                     data = json.load(f)
                     
-                    # 组合完整的 key：时间 + 效果（如 "日景风格1（冷调）"）
-                    preset_key = time_category + style_effect
-                    
-                    # 尝试查找组合 key
-                    if preset_key in data:
-                        entry = data[preset_key]
-                    else:
-                        # 回退：尝试直接使用 style_effect（兼容旧格式或非标准 key）
-                        if style_effect in data:
-                            entry = data[style_effect]
-                            print(f"[ArchiPromptPreset] Warning: Using fallback key '{style_effect}'")
+                    # 二级嵌套结构访问：data[time_category][style_effect]
+                    if time_category in data and isinstance(data[time_category], dict):
+                        if style_effect in data[time_category]:
+                            entry = data[time_category][style_effect]
                         else:
-                            print(f"[ArchiPromptPreset] Key '{preset_key}' not found in presets.json")
+                            print(f"[ArchiPromptPreset] Style '{style_effect}' not found in category '{time_category}'")
+                            entry = None
+                    else:
+                        # 回退：尝试扁平结构（兼容旧格式）
+                        flat_key = time_category + style_effect
+                        if flat_key in data:
+                            entry = data[flat_key]
+                            print(f"[ArchiPromptPreset] Warning: Using legacy flat key '{flat_key}'")
+                        else:
+                            print(f"[ArchiPromptPreset] Category '{time_category}' not found or invalid structure")
                             entry = None
                     
                     # 处理找到的内容
@@ -166,9 +162,6 @@ class ArchiPromptPreset:
         
         return (final_output,)
 
-# ==============================================================================
-# ComfyUI 节点注册（必须包含，用于识别和映射）
-# ==============================================================================
 NODE_CLASS_MAPPINGS = {
     "ArchiPromptPreset": ArchiPromptPreset
 }
