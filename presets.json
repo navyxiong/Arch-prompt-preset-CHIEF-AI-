@@ -916,19 +916,19 @@
       },
       "lighting_setup": {
         "time_of_day": "Late Afternoon, Gloomy",
-        "weather": "Torrential Downpour, Cumulonimbus Overcast, heavy atmosphere",
+        "weather": "Torrential Downpour, Cumulonimbus Overcast",
         "lighting_direction": "Omnidirectional Diffused Skylight",
-        "quality": "Soft but Heavy, Flat Light with High Specular Highlights on wet surfaces, diffuse reflection",
-        "artificial_light": "Subtle cool interior lights (30% opacity), lights reflecting on wet ground"
+        "quality": "Soft , Flat Light with High Specular Highlights on wet surfaces, diffuse reflection",
+        "artificial_light": "Ultra soft interior lights (30% opacity), lights reflecting on wet ground"
       },
       "color_grading": {
-        "palette": "Monochromatic Slate Grey, Steel Blue, Anthracite, Cool Cyan undertones",
-        "saturation": "Low (-25%), Desaturated",
+        "palette": " Slate Grey, Steel Blue, Anthracite, Cool Cyan undertones",
+        "saturation": "Low, Desaturated",
         "contrast": "High, Crushed Blacks, punchy highlights"
       },
       "texture_quality": {
-        "details": "High-fidelity raindrops on glass, volumetric rain fog, slick wet ground reflections, Pedestrians holding umbrellas, The tires of a moving car raise water vapor, photorealistic human elements.",
-        "surface_descriptions": "Highly reflective glazing, metallic framing, fabric textures on people's clothing."
+        "details": "High-fidelity raindrops on glass, volumetric rain fog, slick wet ground reflections, Pedestrians holding umbrellas, The  moving cars raise water vapor, photorealistic human elements.",
+        "surface_descriptions": "Highly reflective glazing, fabric textures on people's clothing."
       },
       "composition_guide": {
         "type": "Central One-Point Perspective (Symmetrical)",
@@ -936,11 +936,11 @@
       },
       "atmosphere": {
         "mood": "Cinematic, Dystopian, Industrial, Melancholic, Imposing, Blade Runner aesthetic.",
-        "feeling": "Cold, Isolation, Urban Solitude."
+        "feeling": "Cool, Isolation, Urban Solitude."
       },
       "technical_quality": {
         "post_processing": "Bleach Bypass look, High Clarity, Structure boost, Dehaze for building outline.",
-        "white_balance": "Cool / 4500K",
+        "white_balance": "Cool / 6500K",
         "tone": "Low-key, Moody, Dark.",
         "vignette": "Subtle lens falloff to center attention",
         "dynamic_range": "High Dynamic Range (HDR) to retain details in dark clouds and glass reflections."
