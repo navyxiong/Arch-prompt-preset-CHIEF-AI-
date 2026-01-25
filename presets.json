@@ -571,7 +571,7 @@
       }
     },
     "夜景风格3（多云）": {
-      "camera_gear": {
+       "camera_gear": {
         "model": "Phase One XF IQ4 150MP Camera System",
         "lens": "Schneider Kreuznach 35mm LS f/3.5 Blue Ring (Tilt-Shift aesthetic)",
         "sensor": "Medium Format (53.4 x 40mm) Trichromatic",
@@ -581,15 +581,15 @@
       },
       "lighting_setup": {
         "time_of_day": "Evening, approx 10:00 PM",
-        "weather": "Black evening cloudy sky, calm atmosphere",
+        "weather": "Evening cloudy sky, calm atmosphere",
         "lighting_direction": "Internal warm architectural lighting acting as the main source",
-        "quality": "Soft, diffused global illumination on building facade, internal glow",
+        "quality": "Soft, diffused warm lighting illumination on building facade, internal glow",
         "artificial_light": "3200K Tungsten interior lights."
       },
       "color_grading": {
-        "palette": "Complementary Teal and Orange (Black sky vs. Amber/Gold interior lights)",
+        "palette": "Complementary Teal and Orange (Dark blue sky vs. Amber/Gold interior lights)",
         "saturation": "Vibrant but natural",
-        "contrast": "High micro-contrast, rich blacks in shadows without crushing details"
+        "contrast": "High micro-contrast"
       },
       "texture_quality": {
         "details": "Ultra-sharp 8k resolution, realistic material definitions, photorealistic human elements.",
