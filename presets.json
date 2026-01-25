@@ -451,19 +451,19 @@
         "sensor": "Full Frame 45MP CMOS",
         "shutter_speed": "1/60 sec",
         "aperture": "f/8.0 (Sweet spot for sharpness)",
-        "iso": "ISO 200"
+        "iso": "ISO 600"
       },
       "lighting_setup": {
         "time_of_day": "Dramatic Sunset / Magic Hour",
         "weather": "Clearing storm, dramatic pink and purple clouds, wet ground after rain",
         "lighting_direction": "Direct-front-lighting from low angle sun (warm glow) mixed with bright skylight fill",
         "quality": "Vibrant, diffuse but directional warm highlight on the building facade",
-        "artificial_light": "3000K warm interior lights starting to turn on, glowing lobby, streetlights active"
+        "artificial_light": "1000K white interior lights starting to turn on, glowing lobby, streetlights active"
       },
       "color_grading": {
-        "palette": "Vibrant Analogous: Magenta/Purple/Orange (Sky) vs. Warm (Building)",
-        "saturation": "High saturation, especially in the sky gradients and reflections",
-        "contrast": "Medium contrast"
+        "palette": "Vibrant Analogous: Orange (Sky) vs. Warm (Building)",
+        "saturation": "Hign saturation, especially in the sky gradients and reflections",
+        "contrast": "Low contrast"
       },
       "texture_quality": {
         "details": "Clear glass reflections, photorealistic human elements.",
@@ -479,9 +479,9 @@
         "feeling": "The end of a busy day, the beauty of city life under a spectacular sunset."
       },
       "technical_quality": {
-        "post_processing": "Vibrant color grading (Pink/Purple bias), perspective correction, highlight recovery in sky",
+        "post_processing": "Vibrant color grading , perspective correction, highlight recovery in sky",
         "white_balance": "6500K (Tint shifted towards Magenta to enhance the sunset colors)",
-        "tone": "Warm and rich, lifting shadows to reveal street details",
+        "tone": "Warm, lifting shadows to reveal street details",
         "vignette": "Subtle darkening at bottom edges to ground the composition",
         "dynamic_range": "High Dynamic Range (HDR) to balance the flaming sky and the shadowed ground"
       }
