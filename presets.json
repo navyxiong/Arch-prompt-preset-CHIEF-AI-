@@ -539,14 +539,14 @@
       },
       "lighting_setup": {
         "time_of_day": "Civil Twilight (Overcast)",
-        "weather": "Cold, grey, flat sky, diffused light",
+        "weather": "Cool, grey, flat sky, diffused light",
         "lighting_direction": "Frontal flat ambient fill vs. Strong internal transmission",
         "quality": "Shadowless environmental light allowing the internal lighting to define the structure",
-        "artificial_light": "6000K bright neutral white interior office strip lights, fully illuminated floors"
+        "artificial_light": "3000K bright neutral white interior lights, fully illuminated floors"
       },
       "color_grading": {
-        "palette": "Cold Monochrome with Luminous Highlights (Bright White lights)",
-        "saturation": "Low saturation, almost monochromatic",
+        "palette": "Cool with Luminous Highlights (Bright White lights)",
+        "saturation": "Medium saturation, ",
         "contrast": "High local contrast, clean lines"
       },
       "texture_quality": {
@@ -564,7 +564,7 @@
       },
       "technical_quality": {
         "post_processing": "Perspective correction (Zero distortion), highlight compression to prevent interior blowout.",
-        "white_balance": "5000K (Neutral, keeping the sky grey and lights white)",
+        "white_balance": "2000K (Neutral, keeping the sky grey blue and lights white)",
         "tone": "Linear curve, emphasizing geometric repetition",
         "vignette": "Flat field illumination",
         "dynamic_range": "High Dynamic Range (HDR) needed to balance the facade and interior"
