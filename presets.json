@@ -656,7 +656,7 @@
     }
   },
   "阴天": {
-    "阴天风格1（亮调）": {
+    "阴天风格1（暗调）": {
       "camera_gear": {
         "model": "Fujifilm GFX 100S",
         "lens": "Fujinon GF 32-64mm f/4 R LM WR (set at 35mm equivalent)",
@@ -697,46 +697,44 @@
         "dynamic_range": "Standard dynamic range, realistic falloff"
       }
     },
-    "阴天风格2（暗调）": {
-      "camera_gear": {
-        "model": "Sony A7R V",
-        "lens": "Sony FE 24-70mm f/2.8 GM II (at 24mm wide end)",
-        "sensor": "Full Frame 61MP Exmor R CMOS",
-        "shutter_speed": "1/200 sec",
-        "aperture": "f/8.0 (standard architectural aperture for depth of field)",
-        "iso": "ISO 100 (balancing exposure under overcast sky)"
-      },
-      "lighting_setup": {
-        "time_of_day": "Late Afternoon (Overcast)",
-        "weather": "Cloudy sky, with a smooth black-to-dark grey gradient. Even illumination without harsh shadows",
-        "lighting_direction": "Global illumination",
-        "quality": "Neutral lighting that emphasizes material transparency and reflection, high contrast.",
-        "artificial_light": "Minimal/Off (relying purely on natural ambient light for realism)"
-      },
-      "color_grading": {
-        "palette": "Naturalistic Cool Tones (Dark sky, Dark Blue glass, Deep Green foliage)",
-        "saturation": "True-to-life, desaturated sky but vibrant greens",
-        "contrast": "High contrast (preserving details in both bright clouds and dark street corners)"
-      },
-      "texture_quality": {
-        "details": "High definition glass reflections, realistic street clutter, photorealistic human elements.",
-        "surface_descriptions": "Highly reflective glass reflecting the cloudy sky and adjacent buildings, natural organic tree leaves"
-      },
-      "composition_guide": {
-        "type": "Street level eye-view, 2-point perspective",
-        "balance": "None",
-        "framing": "None"
-      },
-      "atmosphere": {
-        "mood": "Objective, Professional, Realistic, Moody.",
-        "feeling": "Repression, seriousness, architectural weight."
-      },
-      "technical_quality": {
-        "post_processing": "Minimal processing, natural white balance, lens correction applied",
-        "white_balance": "6000K (Daylight/Cloudy)",
-        "tone": "Linear curve, faithful reproduction of grey values",
-        "vignette": "None (edge-to-edge brightness)",
-        "dynamic_range": "Standard dynamic range capturing the nuances of the dark sky"
+    "阴天风格2（亮调）": {
+              "camera_gear": {
+            "model": "Fujifilm GFX 100 II (Medium Format, 102MP for resolving the dense vertical lines)",
+            "lens": "Fujinon GF 32-64mm f/4 R LM WR @ 35mm (Wide angle to capture the expansive plaza and building width without excessive distortion)",
+            "sensor": "BSI CMOS Medium Format (High resolution essential for the intricate facade details)",
+            "shutter_speed": "1/250 sec (To freeze the movement of the crowd in the foreground)",
+            "aperture": "f/8.0 (Sweet spot for sharpness, sufficient depth of field for the entire building volume)"
+        },
+        "lighting_setup": {
+            "time_of_day": "Mid-day, Overcast",
+            "weather": "Cloudy Bright / High thin overcast clouds (Creating a giant softbox effect)",
+            "lighting_direction": "Omnidirectional / Top-down diffuse light (No harsh directional shadows)",
+            "quality": "Ultra-soft, shadowless illumination. Even brightness across the entire facade.",
+            "artificial_light": "Subtle warm interior glow visible through the glass layers, contrasting slightly with the cool exterior daylight"
+        },
+        "color_grading": {
+            "palette": " Muted plants.",
+            "saturation": "Low Saturation (Minimalist and clinical)",
+            "contrast": "Low Global Contrast (Flat lighting), but High Local Contrast (Texture enhancement)"
+        },
+        "texture_quality": {
+            "details": "High frequency repetition.",
+            "surface_descriptions": "Transparent glass layers."
+        },
+        "composition_guide": {
+            "type": "Eye-level Environmental Wide Shot.",
+            "balance": "Layered Horizontal Composition. "
+        },
+        "atmosphere": {
+            "mood": "Futuristic, Collaborative, Clean， Tech-driven.",
+            "feeling": "High-tech. Orderly bustle."
+        },
+        "technical_quality": {
+            "post_processing": "Vertical Keystone Correction (Vertical lines must be perfectly parallel), Chromatic Aberration removal , Slight cool toning.",
+            "white_balance": "Neutral Daylight (5500K)",
+            "tone": "High-key, bright and airy shadows.",
+            "vignette": "None.",
+            "dynamic_range": "Medium (The overcast light naturally compresses the dynamic range, making exposure easier)."
       }
     },
     "阴天风格3（重调）": {
