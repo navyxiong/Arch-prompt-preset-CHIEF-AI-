@@ -2,933 +2,116 @@
   "日景": {
     "日景风格1（冷调）": {
       "camera_gear": {
-        "model": "Phase One XF IQ4 150MP Achromatic System",
-        "lens": "Rodenstock HR Digaron-W 32mm f/4 (Zero distortion, huge image circle for shift)",
-        "sensor": "Medium Format BSI CMOS (53.4 x 40mm)",
-        "shutter_speed": "1/125 sec (ISO 50, tripod mounted)",
-        "aperture": "f/11 (sweet spot for corner-to-corner sharpness and hyperfocal distance)"
+        "model": "Phase One XF IQ4 150MP Camera System (Medium Format)",
+        "lens": "Schneider Kreuznach 35mm LS f/3.5 Blue Ring Lens with Tilt-Shift movements applied for zero distortion",
+        "sensor": "CMOS Medium Format (53.4 x 40mm), 16-bit color depth",
+        "shutter_speed": "1/125 sec (ISO 50)",
+        "aperture": "f/11 (for deep depth of field, optimal diffraction limit and razor-sharpness across the frame)"
       },
       "lighting_setup": {
-        "time_of_day": "High Noon / Early Afternoon (approx. 13:00 - 14:00)",
-        "weather": "Crystal clear sky, high altitude visibility, deep polarization",
-        "lighting_direction": "High-angle hard sunlight (approx. 65 degrees elevation), creating sharp geometric shadows",
-        "quality": "High contrast, specular highlights on glazing, distinct shadow delineation (Chiaroscuro)",
-        "artificial_light": "None (Pure daylight dominance)"
+        "time_of_day": "Mid-day / Early Afternoon (approx. 13:00 - 14:00)",
+        "weather": "Clear, cloudless blue sky with high visibility (CAVOK), crisp atmosphere",
+        "lighting_direction": "Hard direct sunlight striking from the top-right (approx. 60 degrees azimuth), creating distinct geometric cast shadows",
+        "quality": "High contrast, specular, architectural chiaroscuro, revealing tectonic form through strong highlights and deep blacks",
+        "artificial_light": "None active (pure daylight dominance)"
       },
       "color_grading": {
-        "palette": "Corporate Cold: Lab color space focus on sterile Cyan/Blues and neutral Greys.",
-        "saturation": "Medium saturation, emphasizing clarity over warmth",
-        "contrast": "High global contrast, linear curve with deep blacks and preserved highlight roll-off"
+        "palette": "Naturalistic and vibrant architectural palette. Dominant cool cyan/blue tones from sky mixed with neutral whites.",
+        "saturation": "Medium-High saturation, true-to-life but punchy hues (Slide film aesthetic)",
+        "contrast": "High global contrast, with crushed blacks in shadowed recesses and brilliant specular highlights on glazed surfaces"
       },
       "texture_quality": {
-        "details": "16-bit color depth texture resolving power. Micro-contrast on facade materials.",
-        "surface_descriptions": "Pristine low-iron glass with minimal distortion, matte aluminum cladding, sharp asphalt grain, hyper-realistic vegetation."
+        "details": "Ultra-high definition photographic fidelity, micro-contrast enhancement. Every architectural element resolved sharply, photorealistic human elements.",
+        "surface_descriptions": "Reflective glass showing distorted sky reflections; asphalt road grain; distinct individual leaves on urban greenery, fabric textures on people's clothing."
       },
       "composition_guide": {
-        "type": "Eye-level strict 2-point perspective",
-        "balance": "Asymmetrical but weight-balanced composition."
+        "type": "Eye-level perspective (approx. 1.7m height)",
+        "balance": "Asymmetrical composition, dynamic leading lines."
       },
       "atmosphere": {
-        "mood": "Clinical, Precise, Monumental, High-tech",
-        "feeling": "A testament to engineering precision and modern clarity."
+        "mood": "Imposing, clean, modern, professional, crystalline clarity, aspirational",
+        "feeling": "A sense of impressive scale and contemporary urban development under idealized commercial conditions."
       },
       "technical_quality": {
-        "post_processing": "Digital Tech Camera workflow: 100% Keystone correction, chromatic aberration removal, LCC (Lens Cast Correction).",
-        "white_balance": "Daylight balanced (5400K), slightly cooled shadows",
-        "tone": "Slight S-curve for separation, local contrast boost",
-        "vignette": "Zero vignetting (Flat field)",
-        "dynamic_range": "High Dynamic Range (ETTR - Expose To The Right) to protect highlights."
+        "post_processing": "Rigorous architectural cleanup. Full keystone correction (verticals perfectly parallel). Chromatic aberration removal. Highlight recovery applied to glass reflections.",
+        "white_balance": "Daylight balanced (5500K), neutral gray point",
+        "tone": "Slight S-curve applied for tonal separation, emphasizing mid-tone details in the building materials",
+        "vignette": "Zero vignetting, edge-to-edge brightness consistency",
+        "dynamic_range": "Extremely high dynamic range (15 stops), detail preserved from the brightest cloudless sky down to the deepest street-level shadows."
       }
     },
     "日景风格2（冷调）": {
       "camera_gear": {
-        "model": "Alpa 12 MAX",
-        "lens": "Rodenstock HR Digaron-S 23mm f/5.6",
-        "sensor": "Phase One IQ4 150MP Trichromatic",
+        "model": "Phase One IQ4 150MP",
+        "lens": "Rodenstock HR Digaron-W 32mm f/4 Tilt-Shift (The benchmark for resolution)",
+        "sensor": "Medium Format Trichromatic",
         "shutter_speed": "1/250s",
         "aperture": "f/11"
       },
       "lighting_setup": {
         "time_of_day": "Mid-morning, approx 10:00 AM",
-        "weather": "Deep Azure Sky, minimal atmospheric haze",
-        "lighting_direction": "Rembrandt lighting for architecture (45-degree angle front-side)",
-        "quality": "Hard directional light, sculpting the building form with shadow play",
-        "artificial_light": "None"
+        "weather": "Clear dark blue sky, cloudless, high visibility, polarized sky effect",
+        "lighting_direction": "Direct sunlight, 45-degree angle front-side lighting (Rembrandt lighting for architecture)",
+        "quality": "Hard light, distinct shadows on foreground, high local contrast",
+        "artificial_light": "pure daylight"
       },
       "color_grading": {
-        "palette": "Cool Modernist: Steel Blue, Slate Grey, and pure White.",
-        "saturation": "High vibrance in sky, neutral architecture",
-        "contrast": "Punchy contrast, 'Crushed' blacks for dramatic effect"
+        "palette": "Cool blues and clean whites",
+        "saturation": "High saturation (especially sky blue - polarizing filter effect)",
+        "contrast": "High contrast, deep blacks in shadows, crisp whites"
       },
       "texture_quality": {
-        "details": "Gigapixel fidelity, resolving every brick and leaf.",
-        "surface_descriptions": "Fresnel reflection on glass, anisotropic brushing on metal surfaces, fabric simulation on pedestrians."
+        "details": "8k resolution, hyper-realistic, per-pixel sharpness, photorealistic human elements",
+        "surface_descriptions": "glass with high reflective properties, organic tree leaf texture, fabric textures on people's clothing"
       },
       "composition_guide": {
-        "type": "Wide-angle architectural view with shift movement.",
-        "balance": "Dynamic asymmetry."
+        "type": "2-point perspective with vertical correction",
+        "balance": "Asymmetrical composition"
       },
       "atmosphere": {
-        "mood": "Futuristic, Corporate, Efficient, Clean",
-        "feeling": "Technological superiority."
+        "mood": "Corporate, futuristic, imposing, clean, cold precision",
+        "feeling": "Technological precision and high-end commercial appeal"
       },
       "technical_quality": {
-        "post_processing": "Perspective control, Dehaze, High Pass Sharpening",
-        "white_balance": "Daylight (5500K)",
-        "tone": "Commercial catalogue look",
+        "post_processing": "Perspective control (keystone correction), dehaze, unsharp mask",
+        "white_balance": "Daylight balanced (5500K)",
+        "tone": "Commercial architectural photography style, high-key bias",
         "vignette": "None",
-        "dynamic_range": "Wide exposure latitude."
+        "dynamic_range": "High dynamic range (HDR) to retain details in specular highlights and cast shadows"
       }
     },
     "日景风格3（侧光）": {
       "camera_gear": {
-        "model": "Hasselblad H6D-100c",
-        "lens": "HCD 24mm f/4.8 (Wide angle with correction)",
-        "sensor": "100MP CMOS (53.4 x 40.0mm)",
-        "shutter_speed": "1/500s (Freezing urban motion)",
-        "aperture": "f/11"
+        "model": "Phase One XF IQ4 150MP",
+        "lens": "Schneider Kreuznach 35mm LS f/3.5 Blue Ring (Tilt-Shift lens for vertical perspective correction)",
+        "sensor": "Medium Format CMOS",
+        "shutter_speed": "1/500s (to freeze the motion of the pedestrian and plants)",
+        "aperture": "f/11 (for deep depth of field and edge-to-edge sharpness)"
       },
       "lighting_setup": {
         "time_of_day": "Mid-morning, approx 10:30 AM",
-        "weather": "CAVOK (Ceiling and Visibility OK), piercing blue sky",
-        "lighting_direction": "Raking Light (Side lighting) to exaggerate textures and depth",
-        "quality": "Crisp, defined shadows, high modeling capability",
-        "artificial_light": "None"
+        "weather": "Crystal clear blue sky, zero cloud coverage, high visibility",
+        "lighting_direction": "High-angle side-frontal sunlight (Raking light creating defined, hard shadows from the trees onto the building facade)",
+        "quality": "Hard light, high contrast, crisp sunbeams, emphasized texture relief",
+        "artificial_light": "100% natural daylight setup"
       },
       "color_grading": {
-        "palette": "ArchDaily Editorial Style: Vivid sky, natural greenery, neutral building materials.",
-        "saturation": "Natural to slightly vibrant",
-        "contrast": "High contrast, utilizing shadows to frame the light"
+        "palette": "vivid azure sky blue, natural foliage green, neutral building tones",
+        "saturation": "Natural to slightly vibrant (ArchDaily editorial style)",
+        "contrast": "High contrast with deep, cool shadows and bright highlights"
       },
       "texture_quality": {
-        "details": "Tactile surfacing: Rough concrete vs smooth glass.",
-        "surface_descriptions": "Specular highlights on foliage, sub-surface scattering in leaves, detailed fabrics."
+        "details": "8k resolution, photorealistic material definition, tactile surfaces, photorealistic human elements",
+        "surface_descriptions": "reflective glass showing sky reflections, organic leaf textures, fabric textures on people's clothing"
       },
       "composition_guide": {
-        "type": "Narrative 2-point perspective.",
-        "balance": "Pedestrian scaling (Scale figures) balancing the mass."
+        "type": "2-point perspective with vertical correction",
+        "balance": "Asymmetrical narrative balance (pedestrian in foreground anchoring the scale against the monumental building mass)"
       },
       "atmosphere": {
-        "mood": "Operational, Vibrant, Geometric, Rational",
-        "feeling": "Urban rhythm and efficiency."
+        "mood": "Professional, operational, energetic, clean, active",
+        "feeling": "Contemporary urban efficiency, bright and airy"
       },
       "technical_quality": {
-        "post_processing": "Keystone correction, Clarity boost on textures, Shadow recovery +15",
-        "white_balance": "5500K",
-        "tone": "Bright and airy, 'High Key' tendency",
-        "vignette": "None",
-        "dynamic_range": "15 stops of dynamic range utilized."
-      }
-    },
-    "日景风格4（暖调）": {
-      "camera_gear": {
-        "model": "Canon EOS R5",
-        "lens": "Canon TS-E 17mm f/4L (Widest Tilt-Shift)",
-        "sensor": "Full-frame CMOS, 45 MP",
-        "shutter_speed": "1/1000 sec",
-        "aperture": "f/11"
-      },
-      "lighting_setup": {
-        "time_of_day": "Late morning, approx 11:00 AM",
-        "weather": "Sunny, warm atmospheric scattering",
-        "lighting_direction": "Front-right 3/4 lighting",
-        "quality": "Warm, inviting, 'Golden' daylight, hard shadows but filled with bounce light",
-        "artificial_light": "None"
-      },
-      "color_grading": {
-        "palette": "Commercial Warmth: Beige, Gold, Cyan (Sky).",
-        "saturation": "High saturation, optimistic tones",
-        "contrast": "High contrast but with lifted mid-tones"
-      },
-      "texture_quality": {
-        "details": "8K hyper-realism.",
-        "surface_descriptions": "Reflective glass showing cloud details, distinct material separation."
-      },
-      "composition_guide": {
-        "type": "Wide landscape exterior, Eye-level.",
-        "balance": "Rule of thirds."
-      },
-      "atmosphere": {
-        "mood": "Optimistic, Lively, Residential/Commercial appeal",
-        "feeling": "A desirable place to be."
-      },
-      "technical_quality": {
-        "post_processing": "Verticals corrected, vibrance boost, sharp output.",
-        "white_balance": "5600K (Slight warm bias)",
-        "tone": "High-key, commercial real estate look",
-        "vignette": "Minimal",
-        "dynamic_range": "HDR merged."
-      }
-    },
-    "日景风格5（逆光）": {
-      "camera_gear": {
-        "model": "Sony Alpha 7R V",
-        "lens": "Sony FE 50mm f/1.2 GM (Panorama stitch for resolution)",
-        "sensor": "61MP Exmor R CMOS",
-        "shutter_speed": "1/2000 sec (Silhouette freezing)",
-        "aperture": "f/5.6 - f/8 (Balancing sunstar and sharpness)"
-      },
-      "lighting_setup": {
-        "time_of_day": "High Noon / Early PM",
-        "weather": "Hazy Sunshine",
-        "lighting_direction": "Contre-jour (Direct Backlight)",
-        "quality": "Rim lighting (Halo effect) on building edges, translucent foliage",
-        "artificial_light": "None"
-      },
-      "color_grading": {
-        "palette": "Eco-Futurism: Overexposed whites, lush greens, cyan glass.",
-        "saturation": "Vibrant highlights, desaturated shadows",
-        "contrast": "Extreme light ratios, ethereal look"
-      },
-      "texture_quality": {
-        "details": "Translucency in vegetation, silhouette details in architecture.",
-        "surface_descriptions": "Low-e glass transparency, lens flare elements."
-      },
-      "composition_guide": {
-        "type": "Vertical Portrait.",
-        "balance": "Layered depth: Foreground foliage -> Midground Building -> Background Sun."
-      },
-      "atmosphere": {
-        "mood": "Serene, Sustainable, Biophilic, Dreamy",
-        "feeling": "Harmony between nature and structure."
-      },
-      "technical_quality": {
-        "post_processing": "Shadow lifting, De-glare (except artistic flare), Vertical correction.",
-        "white_balance": "Daylight 5500K",
-        "tone": "Ethereal glow (Orton Effect subtle)",
-        "vignette": "Optical vignetting to frame subject",
-        "dynamic_range": "Maximum (preserving sun disk and shadow detail)."
-      }
-    }
-  },
-  "清晨": {
-    "清晨风格1（雾天）": {
-      "camera_gear": {
-        "model": "Fujifilm GFX 100 II",
-        "lens": "GF 45mm f/2.8 R WR",
-        "sensor": "102MP CMOS II HS",
-        "shutter_speed": "1/60 sec",
-        "aperture": "f/8"
-      },
-      "lighting_setup": {
-        "time_of_day": "Early Morning, approx 6:30 AM",
-        "weather": "Dense low-lying fog/mist (Advection fog)",
-        "lighting_direction": "Diffused softbox effect, directional ambiguity",
-        "quality": "Soft, scattering light, atmospheric depth masking background",
-        "artificial_light": "Subtle warm spill from interior (inviting glow)"
-      },
-      "color_grading": {
-        "palette": "Morandi Palette: Muted Greys, Sage Greens, Pale Blues.",
-        "saturation": "Low saturation, pastel tones",
-        "contrast": "Low global contrast, focus on tonal gradients"
-      },
-      "texture_quality": {
-        "details": "Soft focus fall-off due to mist.",
-        "surface_descriptions": "Dew drops on surfaces, matte glass, wet pavement."
-      },
-      "composition_guide": {
-        "type": "Symmetrical, Zen-like minimalism.",
-        "balance": "Negative space emphasis."
-      },
-      "atmosphere": {
-        "mood": "Ethereal, Silence, Solitary, Poetic",
-        "feeling": "A moment of pause before the city wakes."
-      },
-      "technical_quality": {
-        "post_processing": "Lifted blacks (Matte finish), Soft sharpening, De-noise.",
-        "white_balance": "5000K (Cool/Neutral)",
-        "tone": "Flat curve",
-        "vignette": "White/High-key vignette",
-        "dynamic_range": "Compressed mid-tones."
-      }
-    },
-    "清晨风格2（晴天）": {
-      "camera_gear": {
-        "model": "Phase One IQ4 150MP",
-        "lens": "Schneider 40-80mm LS f/4.0-5.6",
-        "sensor": "Medium Format",
-        "shutter_speed": "1/400 sec",
-        "aperture": "f/11"
-      },
-      "lighting_setup": {
-        "time_of_day": "Golden Hour (Morning), approx 6:30 AM",
-        "weather": "Crisp clear sky, dew point high",
-        "lighting_direction": "Low angle side-lighting (Long shadows)",
-        "quality": "Warm, raking light revealing texture, clean air quality",
-        "artificial_light": "None"
-      },
-      "color_grading": {
-        "palette": "Fujifilm Velvia Simulation: Rich Blues and Warm Yellows.",
-        "saturation": "Vibrant",
-        "contrast": "High, clear distinction between light and shadow"
-      },
-      "texture_quality": {
-        "details": "Crisp edges, micro-contrast in materials.",
-        "surface_descriptions": "Reflective glass, fresh green foliage."
-      },
-      "composition_guide": {
-        "type": "Eye-level with foreground framing (Repoussoir).",
-        "balance": "Asymmetrical."
-      },
-      "atmosphere": {
-        "mood": "Hopeful, New, energetic, Community",
-        "feeling": "The start of a productive day."
-      },
-      "technical_quality": {
-        "post_processing": "Highlight protection, Vibrance boost.",
-        "white_balance": "6000K",
-        "tone": "Rich full-bodied colors",
-        "vignette": "None",
-        "dynamic_range": "High."
-      }
-    }
-  },
-  "黄昏": {
-    "黄昏风格1（蓝调）": {
-      "camera_gear": {
-        "model": "Phase One XF IQ4 150MP",
-        "lens": "Rodenstock 32mm f/4 HR Digaron-W",
-        "sensor": "Medium Format BSI CMOS",
-        "shutter_speed": "1/15 sec",
-        "aperture": "f/11"
-      },
-      "lighting_setup": {
-        "time_of_day": "Blue Hour, approx 20 mins post-sunset",
-        "weather": "Clear Deep Blue Sky",
-        "lighting_direction": "Ambient cool skylight vs Warm interior transmission",
-        "quality": "Soft environmental light, glowing architecture",
-        "artificial_light": "3000K Interior lights on, Exterior landscape lighting active"
-      },
-      "color_grading": {
-        "palette": "Complementary: Royal Blue (Sky) vs Gold (Interior).",
-        "saturation": "High Saturation (Luminous)",
-        "contrast": "Medium global, high local contrast"
-      },
-      "texture_quality": {
-        "details": "Crystal clear glazing transparency.",
-        "surface_descriptions": "Glass curtain wall revealing interior structure, smooth metal panels."
-      },
-      "composition_guide": {
-        "type": "Street-level 2-point perspective.",
-        "balance": "Balanced asymmetry."
-      },
-      "atmosphere": {
-        "mood": "Premium, Corporate, Dynamic, Grand",
-        "feeling": "High-end commercial appeal."
-      },
-      "technical_quality": {
-        "post_processing": "Vertical correction, Highlight compression (to save interior details), Shadow lift.",
-        "white_balance": "Daylight 5600K (Preserves blue sky, makes interior warm)",
-        "tone": "Glossy magazine look",
-        "vignette": "Subtle",
-        "dynamic_range": "High (blended exposures)."
-      }
-    },
-    "黄昏风格2（黄金调）": {
-      "camera_gear": {
-        "model": "Hasselblad H6D-100c",
-        "lens": "HCD 35-90mm",
-        "sensor": "Medium Format",
-        "shutter_speed": "1/250 sec",
-        "aperture": "f/11"
-      },
-      "lighting_setup": {
-        "time_of_day": "Golden Hour (Late Afternoon)",
-        "weather": "Clear sunny sky",
-        "lighting_direction": "Low angle direct frontal/glancing light",
-        "quality": "Warm, blinding specular highlights, long soft shadows",
-        "artificial_light": "Soft interior mix"
-      },
-      "color_grading": {
-        "palette": "Analogous: Gold, Amber, Deep Blue.",
-        "saturation": "Vibrant",
-        "contrast": "Medium-High"
-      },
-      "texture_quality": {
-        "details": "Material warmth.",
-        "surface_descriptions": "Glazed glass reflecting sunset, metallic bronze finishes."
-      },
-      "composition_guide": {
-        "type": "Vertical Urban Landscape.",
-        "balance": "Rule of thirds."
-      },
-      "atmosphere": {
-        "mood": "Aspirational, Wealth, Warmth, Success",
-        "feeling": "Bathed in success."
-      },
-      "technical_quality": {
-        "post_processing": "Flare control, Dehaze.",
-        "white_balance": "6000K (Warm shift)",
-        "tone": "Warm and rich",
-        "vignette": "None",
-        "dynamic_range": "Medium."
-      }
-    },
-    "黄昏风格3（紫调）": {
-      "camera_gear": {
-        "model": "Phase One XT",
-        "lens": "Rodenstock 32mm f/4 HR Digaron-W",
-        "sensor": "IQ4 150MP",
-        "shutter_speed": "2.5 sec (Long exposure)",
-        "aperture": "f/13"
-      },
-      "lighting_setup": {
-        "time_of_day": "Civil Twilight / Magalentha Hour",
-        "weather": "Clear gradient sky (Purple to Blue)",
-        "lighting_direction": "Ambient soft glow",
-        "quality": "Magical, soft, diffuse",
-        "artificial_light": "Cool street lights mixing with warm interior"
-      },
-      "color_grading": {
-        "palette": "Cinematic Vaporwave: Violet, Magenta, Deep Blue, Cyan.",
-        "saturation": "High",
-        "contrast": "High Color Contrast"
-      },
-      "texture_quality": {
-        "details": "Smooth gradients in sky and glass.",
-        "surface_descriptions": "Reflective glass merging with sky."
-      },
-      "composition_guide": {
-        "type": "Wide-angle Elevation.",
-        "balance": "Rhythmic Symmetry."
-      },
-      "atmosphere": {
-        "mood": "Futuristic, Dreamy, High-tech, Transparent",
-        "feeling": "Innovation."
-      },
-      "technical_quality": {
-        "post_processing": "Exposure Blending, Color separation.",
-        "white_balance": "Custom (Magenta tint)",
-        "tone": "Deep rich shadows",
-        "vignette": "Top corner darkening",
-        "dynamic_range": "Ultra High."
-      }
-    },
-    "黄昏风格4（逆光）": {
-      "camera_gear": {
-        "model": "Phase One IQ4 150MP",
-        "lens": "Schneider 35mm LS f/3.5",
-        "sensor": "Medium Format",
-        "shutter_speed": "1/30 sec",
-        "aperture": "f/13"
-      },
-      "lighting_setup": {
-        "time_of_day": "Sunset",
-        "weather": "Hazy",
-        "lighting_direction": "Direct Backlight (Sun in frame)",
-        "quality": "Silhouetting, Rim light, Lens flare",
-        "artificial_light": "Interior lights balancing the silhouette"
-      },
-      "color_grading": {
-        "palette": "Kodak Portra 400: Warm golds, skin tones, pastel greens.",
-        "saturation": "Rich, filmic",
-        "contrast": "High (Backlit)"
-      },
-      "texture_quality": {
-        "details": "Silhouette edges.",
-        "surface_descriptions": "Brushed metal, glass transparency."
-      },
-      "composition_guide": {
-        "type": "Eye-level.",
-        "balance": "Central symmetry."
-      },
-      "atmosphere": {
-        "mood": "Vibrant, Upscale, Cinematic",
-        "feeling": "Dramatic lifestyle."
-      },
-      "technical_quality": {
-        "post_processing": "Halation addition, Perspective correction.",
-        "white_balance": "6500K",
-        "tone": "Filmic curve",
-        "vignette": "Natural fall-off",
-        "dynamic_range": "Very High."
-      }
-    },
-    "黄昏风格5（火烧云）": {
-      "camera_gear": {
-        "model": "Canon EOS R5",
-        "lens": "Canon TS-E 24mm f/3.5L II",
-        "sensor": "Full Frame 45MP",
-        "shutter_speed": "1/60 sec",
-        "aperture": "f/8.0"
-      },
-      "lighting_setup": {
-        "time_of_day": "Dramatic Sunset",
-        "weather": "Clearing storm, dramatic clouds",
-        "lighting_direction": "Frontal low warm light + Skylight fill",
-        "quality": "Dramatic, theatrical, transient light",
-        "artificial_light": "Interior warm glow"
-      },
-      "color_grading": {
-        "palette": "Dramatic: Magenta, Purple, Fiery Orange.",
-        "saturation": "Very High",
-        "contrast": "Medium"
-      },
-      "texture_quality": {
-        "details": "Wet surfaces reflecting sky.",
-        "surface_descriptions": "Wet asphalt, glass mirrors."
-      },
-      "composition_guide": {
-        "type": "Street level, 2-point.",
-        "balance": "Wide context."
-      },
-      "atmosphere": {
-        "mood": "Romantic, Epic, Powerful",
-        "feeling": "Spectacle of nature and city."
-      },
-      "technical_quality": {
-        "post_processing": "Sky enhancement, Vertical correction.",
-        "white_balance": "Tinted Magenta",
-        "tone": "Rich and warm",
-        "vignette": "Grounding bottom edge",
-        "dynamic_range": "HDR."
-      }
-    }
-  },
-  "夜景": {
-    "夜景风格1（蓝调）": {
-      "camera_gear": {
-        "model": "Sony Alpha 7R V",
-        "lens": "Sony FE 24mm f/1.4 GM",
-        "sensor": "Full-frame BSI CMOS",
-        "shutter_speed": "10 sec (Long Exposure Light Trails)",
-        "aperture": "f/11"
-      },
-      "lighting_setup": {
-        "time_of_day": "Nautical Twilight / Night",
-        "weather": "Clear Sky",
-        "lighting_direction": "Mixed sources",
-        "quality": "Luminous building against dark sky",
-        "artificial_light": "Complex lighting design: Tungsten (2000K) landscape, LED (4000K) interior, Car trails"
-      },
-      "color_grading": {
-        "palette": "Deep Cobalt Blue vs Electric Gold.",
-        "saturation": "Rich",
-        "contrast": "High micro-contrast, controlled global contrast"
-      },
-      "texture_quality": {
-        "details": "Sharp light sources.",
-        "surface_descriptions": "Glass reflectivity, light spills on pavement."
-      },
-      "composition_guide": {
-        "type": "Street-level 3/4 view.",
-        "balance": "Asymmetrical."
-      },
-      "atmosphere": {
-        "mood": "Sophisticated, Busy, Urban, Welcoming",
-        "feeling": "City that never sleeps."
-      },
-      "technical_quality": {
-        "post_processing": "Perspective Correction, Highlight suppression, Noise reduction.",
-        "white_balance": "Tungsten Priority (3200K)",
-        "tone": "Dark shadows, bright lights",
-        "vignette": "Focus on subject",
-        "dynamic_range": "HDR."
-      }
-    },
-    "夜景风格2（灰调）": {
-      "camera_gear": {
-        "model": "Phase One XT",
-        "lens": "Rodenstock HR Digaron-W 32mm",
-        "sensor": "IQ4 Achromatic",
-        "shutter_speed": "1/4 sec",
-        "aperture": "f/11"
-      },
-      "lighting_setup": {
-        "time_of_day": "Night (Overcast/Urban glow)",
-        "weather": "Grey night sky (Light pollution)",
-        "lighting_direction": "Internal transmission dominant",
-        "quality": "Flat ambient, strong internal definition",
-        "artificial_light": "Cool White Office Lighting (6000K)"
-      },
-      "color_grading": {
-        "palette": "Cold Monochrome / Cyberpunk Grey.",
-        "saturation": "Low/Desaturated",
-        "contrast": "High local contrast"
-      },
-      "texture_quality": {
-        "details": "Structure definition.",
-        "surface_descriptions": "Steel, cold glass, concrete."
-      },
-      "composition_guide": {
-        "type": "Frontal 1-point perspective.",
-        "balance": "Symmetrical stacking."
-      },
-      "atmosphere": {
-        "mood": "Rational, Clinical, Ordered, Transparent",
-        "feeling": "Corporate transparency."
-      },
-      "technical_quality": {
-        "post_processing": "Zero distortion, Highlight compression.",
-        "white_balance": "5000K",
-        "tone": "Linear",
-        "vignette": "None",
-        "dynamic_range": "HDR."
-      }
-    },
-    "夜景风格3（多云）": {
-      "camera_gear": {
-        "model": "Phase One IQ4",
-        "lens": "Schneider 35mm LS",
-        "sensor": "Trichromatic",
-        "shutter_speed": "1/4 sec",
-        "aperture": "f/11"
-      },
-      "lighting_setup": {
-        "time_of_day": "Deep Night",
-        "weather": "Cloudy/Overcast Night",
-        "lighting_direction": "Diffused city glow",
-        "quality": "Soft box effect from clouds",
-        "artificial_light": "Warm Tungsten interior"
-      },
-      "color_grading": {
-        "palette": "Teal & Orange: Dark Cyan sky, Amber interior.",
-        "saturation": "Vibrant",
-        "contrast": "High"
-      },
-      "texture_quality": {
-        "details": "8K resolution.",
-        "surface_descriptions": "Reflective glass."
-      },
-      "composition_guide": {
-        "type": "Street level.",
-        "balance": "Center-weighted."
-      },
-      "atmosphere": {
-        "mood": "Cosmopolitan, Elegant, Serene",
-        "feeling": "Luxury."
-      },
-      "technical_quality": {
-        "post_processing": "Linear workflow.",
-        "white_balance": "4500K",
-        "tone": "S-Curve",
-        "vignette": "Subtle",
-        "dynamic_range": "HDR."
-      }
-    },
-    "夜景风格4（雨后）": {
-      "camera_gear": {
-        "model": "Hasselblad H6D-100c",
-        "lens": "HCD 24mm",
-        "sensor": "100MP CMOS",
-        "shutter_speed": "1/30 sec",
-        "aperture": "f/8"
-      },
-      "lighting_setup": {
-        "time_of_day": "Post-rain Night",
-        "weather": "Storm clearing, wet ground",
-        "lighting_direction": "Reflected light from ground",
-        "quality": "Cinematic, specular reflections",
-        "artificial_light": "Neon/City lights reflecting in puddles"
-      },
-      "color_grading": {
-        "palette": "Blade Runner aesthetics: Teal, Neon, Black.",
-        "saturation": "High",
-        "contrast": "High"
-      },
-      "texture_quality": {
-        "details": "Hyper-realism on wet surfaces.",
-        "surface_descriptions": "Wet asphalt, puddles, sleek glass."
-      },
-      "composition_guide": {
-        "type": "Eye-level.",
-        "balance": "Asymmetrical."
-      },
-      "atmosphere": {
-        "mood": "Dramatic, Cinematic, Moody",
-        "feeling": "Urban drama."
-      },
-      "technical_quality": {
-        "post_processing": "Bloom effect, Clarity boost.",
-        "white_balance": "5200K",
-        "tone": "Low key",
-        "vignette": "Subtle",
-        "dynamic_range": "Wide."
-      }
-    }
-  },
-  "阴天": {
-    "阴天风格1（亮调）": {
-      "camera_gear": {
-        "model": "Fujifilm GFX 100S",
-        "lens": "GF 32-64mm f/4",
-        "sensor": "Medium Format",
-        "shutter_speed": "1/125 sec",
-        "aperture": "f/8"
-      },
-      "lighting_setup": {
-        "time_of_day": "Mid-day Overcast",
-        "weather": "Solid cloud layer (Stratus)",
-        "lighting_direction": "Top-down softbox",
-        "quality": "Shadowless, soft, wrapping light",
-        "artificial_light": "None"
-      },
-      "color_grading": {
-        "palette": "Architectural Neutral: Grey, Green, Concrete.",
-        "saturation": "Natural/Muted",
-        "contrast": "Medium, focus on local texture contrast"
-      },
-      "texture_quality": {
-        "details": "Material fidelity.",
-        "surface_descriptions": "True-to-life materials, soft reflections."
-      },
-      "composition_guide": {
-        "type": "2-point perspective.",
-        "balance": "Asymmetrical."
-      },
-      "atmosphere": {
-        "mood": "Quiet, Real, Industrial",
-        "feeling": "Contemplative."
-      },
-      "technical_quality": {
-        "post_processing": "Naturalistic.",
-        "white_balance": "6000K",
-        "tone": "Linear",
-        "vignette": "None",
-        "dynamic_range": "Standard."
-      }
-    },
-    "阴天风格2（暗调）": {
-      "camera_gear": {
-        "model": "Sony A7R V",
-        "lens": "FE 24-70mm GM II",
-        "sensor": "61MP",
-        "shutter_speed": "1/200 sec",
-        "aperture": "f/8"
-      },
-      "lighting_setup": {
-        "time_of_day": "Late Afternoon Overcast",
-        "weather": "Dark heavy clouds",
-        "lighting_direction": "Global diffuse",
-        "quality": "Moody, flat but dark",
-        "artificial_light": "None"
-      },
-      "color_grading": {
-        "palette": "Cold Earth Tones.",
-        "saturation": "Desaturated",
-        "contrast": "High (Deep shadows)"
-      },
-      "texture_quality": {
-        "details": "Reflective gloom.",
-        "surface_descriptions": "Dark glass, wet look."
-      },
-      "composition_guide": {
-        "type": "Street level.",
-        "balance": "None."
-      },
-      "atmosphere": {
-        "mood": "Objective, Serious, Somber",
-        "feeling": "Gravitas."
-      },
-      "technical_quality": {
-        "post_processing": "Minimal.",
-        "white_balance": "6000K",
-        "tone": "Darker midtones",
-        "vignette": "None",
-        "dynamic_range": "Standard."
-      }
-    },
-    "阴天风格3（重调）": {
-      "camera_gear": {
-        "model": "Leica S3",
-        "lens": "Summarit-S 35mm f/2.5",
-        "sensor": "Medium Format Pro",
-        "shutter_speed": "1/1000 sec",
-        "aperture": "f/11"
-      },
-      "lighting_setup": {
-        "time_of_day": "Stormy Afternoon",
-        "weather": "Broken heavy clouds, God rays",
-        "lighting_direction": "Spotlighting through clouds",
-        "quality": "Dramatic contrast, pools of light",
-        "artificial_light": "None"
-      },
-      "color_grading": {
-        "palette": "Ansel Adams Style (Color): Charcoal, Navy, White.",
-        "saturation": "Low",
-        "contrast": "Very High"
-      },
-      "texture_quality": {
-        "details": "Sharp geometry.",
-        "surface_descriptions": "Volumetric clouds, stark walls."
-      },
-      "composition_guide": {
-        "type": "Geometric Abstraction.",
-        "balance": "Asymmetrical."
-      },
-      "atmosphere": {
-        "mood": "Monumental, Dramatic, Solitary",
-        "feeling": "Awe."
-      },
-      "technical_quality": {
-        "post_processing": "Dodge and Burn.",
-        "white_balance": "5500K",
-        "tone": "High contrast curve",
-        "vignette": "Optical",
-        "dynamic_range": "High."
-      }
-    }
-  },
-  "雨雪天": {
-    "雪天风格1（灰调）": {
-      "camera_gear": {
-        "model": "Phase One XT",
-        "lens": "Rodenstock HR Digaron-W 40mm",
-        "sensor": "IQ4 Achromatic",
-        "shutter_speed": "1/2 sec",
-        "aperture": "f/11"
-      },
-      "lighting_setup": {
-        "time_of_day": "Winter Afternoon",
-        "weather": "Heavy Snow, Whiteout conditions",
-        "lighting_direction": "Omnidirectional scatter",
-        "quality": "Soft, shadowless, high-key",
-        "artificial_light": "Warm (2700K) interior beacon"
-      },
-      "color_grading": {
-        "palette": "High Key Monochromatic: White, Light Grey, Warm Yellow center.",
-        "saturation": "Zero (except interior)",
-        "contrast": "Low"
-      },
-      "texture_quality": {
-        "details": "Subsurface scattering in snow.",
-        "surface_descriptions": "Powdery snow, frosted glass."
-      },
-      "composition_guide": {
-        "type": "Central 1-point.",
-        "balance": "Symmetrical."
-      },
-      "atmosphere": {
-        "mood": "Silent, Pure, Isolated, Safe",
-        "feeling": "Sanctuary."
-      },
-      "technical_quality": {
-        "post_processing": "Keystone correction.",
-        "white_balance": "3500K",
-        "tone": "High-key",
-        "vignette": "Subtle",
-        "dynamic_range": "HDR."
-      }
-    },
-    "雪天风格2（蓝调）": {
-      "camera_gear": {
-        "model": "Sony Alpha 7R V",
-        "lens": "FE 24-70mm GM II",
-        "sensor": "61MP",
-        "shutter_speed": "1/60 sec",
-        "aperture": "f/8"
-      },
-      "lighting_setup": {
-        "time_of_day": "Blue Hour Winter",
-        "weather": "Snowfall, overcast",
-        "lighting_direction": "Cool ambient fill",
-        "quality": "Ethereal, soft",
-        "artificial_light": "None (or very subtle)"
-      },
-      "color_grading": {
-        "palette": "Ice & Wood: Cyan/Blue environment vs Wood tones.",
-        "saturation": "Medium",
-        "contrast": "Medium-High Color Contrast"
-      },
-      "texture_quality": {
-        "details": "Snowflakes.",
-        "surface_descriptions": "Snow, glass, wood."
-      },
-      "composition_guide": {
-        "type": "3/4 View.",
-        "balance": "Asymmetrical."
-      },
-      "atmosphere": {
-        "mood": "Cozy (Hygge), Serene, Cold",
-        "feeling": "Winter retreat."
-      },
-      "technical_quality": {
-        "post_processing": "Cool bias.",
-        "white_balance": "4500K",
-        "tone": "High-key",
-        "vignette": "Frosty",
-        "dynamic_range": "High."
-      }
-    },
-    "雨天风格1（小雨）": {
-      "camera_gear": {
-        "model": "Fujifilm GFX 100S",
-        "lens": "GF 32-64mm",
-        "sensor": "Medium Format",
-        "shutter_speed": "1/30 sec",
-        "aperture": "f/11"
-      },
-      "lighting_setup": {
-        "time_of_day": "Rainy Morning",
-        "weather": "Light Rain, Mist",
-        "lighting_direction": "Top-down diffuse",
-        "quality": "Flat, wet sheen on surfaces",
-        "artificial_light": "None"
-      },
-      "color_grading": {
-        "palette": "Bleach Bypass: Desaturated Slate, Sage, Concrete.",
-        "saturation": "Low",
-        "contrast": "Low global, High micro-contrast"
-      },
-      "texture_quality": {
-        "details": "Rain streaks, wet asphalt.",
-        "surface_descriptions": "Puddles, matte wet surfaces."
-      },
-      "composition_guide": {
-        "type": "Eye-level.",
-        "balance": "Asymmetrical."
-      },
-      "atmosphere": {
-        "mood": "Melancholic, Zen, Fresh",
-        "feeling": "Perseverance."
-      },
-      "technical_quality": {
-        "post_processing": "Cool tone mapping.",
-        "white_balance": "6500K",
-        "tone": "Mid-tone heavy",
-        "vignette": "Haze",
-        "dynamic_range": "Standard."
-      }
-    },
-    "雨天风格2（大雨）": {
-      "camera_gear": {
-        "model": "Phase One XF IQ4",
-        "lens": "Schneider 35mm LS",
-        "sensor": "Medium Format",
-        "shutter_speed": "1/500s",
-        "aperture": "f/11"
-      },
-      "lighting_setup": {
-        "time_of_day": "Stormy Afternoon",
-        "weather": "Torrential Rain",
-        "lighting_direction": "Diffuse",
-        "quality": "Heavy, glossy, specular",
-        "artificial_light": "Reflections in water"
-      },
-      "color_grading": {
-        "palette": "Stormy: Anthracite, Steel Blue, Cold Cyan.",
-        "saturation": "Desaturated",
-        "contrast": "High, punchy highlights"
-      },
-      "texture_quality": {
-        "details": "Splashing water, mist.",
-        "surface_descriptions": "Slick surfaces, volumetric rain."
-      },
-      "composition_guide": {
-        "type": "Central 1-point.",
-        "balance": "Vertical lines."
-      },
-      "atmosphere": {
-        "mood": "Dystopian, Cinematic, Intense",
-        "feeling": "Isolation."
-      },
-      "technical_quality": {
-        "post_processing": "Structure boost, Dehaze.",
-        "white_balance": "4500K",
-        "tone": "Low-key",
-        "vignette": "Subtle",
-        "dynamic_range": "HDR."
-      }
-    }
-  }
-}
+        "post_processing": "Keystone correction (vertical lines parallel), chromatic aberration removal, unsharp mask applied",
+        "whi
