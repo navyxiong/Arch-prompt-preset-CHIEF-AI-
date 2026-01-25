@@ -881,7 +881,7 @@
         "artificial_light": "None / Natural daylight only (Lights off to emphasize the natural texture)"
       },
       "color_grading": {
-        "palette": "Desaturated Cool Tones (Slate Grey, Wet floor, Muted Sage Green)",
+        "palette": "Desaturated Cool Tones (Slate facades, Wet floor, Muted plants)",
         "saturation": "Low saturation (Bleach Bypass look), emphasizing textures over colors",
         "contrast": "Low global contrast but high micro-contrast (clarity) on wet surfaces"
       },
