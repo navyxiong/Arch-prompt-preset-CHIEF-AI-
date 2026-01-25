@@ -181,7 +181,7 @@
         "contrast": "Medium-High, preserving shadow details despite backlighting"
       },
       "texture_quality": {
-        "details": "High-frequency detail in the building's glass and the feathery texture of the reeds, photorealistic human elements.",
+        "details": "High-frequency detail in the building's glass , photorealistic human elements.",
         "surface_descriptions": "Low-reflection glass, fabric textures on people's clothing"
       },
       "composition_guide": {
@@ -190,8 +190,8 @@
       },
       "atmosphere": {
         "mood": "Serene, sustainable, active, harmonious, ethereal",
-        "feeling": "A perfect integration of nature and architecture."
-      },
+        "feeling": "A perfect integration of architecture."
+      }
       "technical_quality": {
         "post_processing": "Vertical perspective correction (Keystone correction), Shadow recovery on the building's face.",
         "white_balance": "Daylight (shifted slightly cooler for the building shadow areas, 6000K)",
