@@ -191,7 +191,7 @@
       "atmosphere": {
         "mood": "Serene, sustainable, active, harmonious, ethereal",
         "feeling": "A perfect integration of architecture."
-      }
+      },
       "technical_quality": {
         "post_processing": "Vertical perspective correction (Keystone correction), Shadow recovery on the building's face.",
         "white_balance": "Daylight (shifted slightly cooler for the building shadow areas, 6000K)",
@@ -571,7 +571,7 @@
       }
     },
     "夜景风格3（多云）": {
-       "camera_gear": {
+      "camera_gear": {
         "model": "Phase One XF IQ4 150MP Camera System",
         "lens": "Schneider Kreuznach 35mm LS f/3.5 Blue Ring (Tilt-Shift aesthetic)",
         "sensor": "Medium Format (53.4 x 40mm) Trichromatic",
@@ -698,43 +698,43 @@
       }
     },
     "阴天风格2（亮调）": {
-              "camera_gear": {
-            "model": "Fujifilm GFX 100 II (Medium Format, 102MP for resolving the dense vertical lines)",
-            "lens": "Fujinon GF 32-64mm f/4 R LM WR @ 35mm (Wide angle to capture the expansive plaza and building width without excessive distortion)",
-            "sensor": "BSI CMOS Medium Format (High resolution essential for the intricate facade details)",
-            "shutter_speed": "1/250 sec (To freeze the movement of the crowd in the foreground)",
-            "aperture": "f/8.0 (Sweet spot for sharpness, sufficient depth of field for the entire building volume)"
-        },
-        "lighting_setup": {
-            "time_of_day": "Mid-day, Overcast",
-            "weather": "Cloudy Bright / High thin overcast clouds (Creating a giant softbox effect)",
-            "lighting_direction": "Omnidirectional / Top-down diffuse light (No harsh directional shadows)",
-            "quality": "Ultra-soft, shadowless illumination. Even brightness across the entire facade.",
-            "artificial_light": "Subtle warm interior glow visible through the glass layers, contrasting slightly with the cool exterior daylight"
-        },
-        "color_grading": {
-            "palette": " Muted plants.",
-            "saturation": "Low Saturation (Minimalist and clinical)",
-            "contrast": "Low Global Contrast (Flat lighting), but High Local Contrast (Texture enhancement)"
-        },
-        "texture_quality": {
-            "details": "High frequency repetition.",
-            "surface_descriptions": "Transparent glass layers."
-        },
-        "composition_guide": {
-            "type": "Eye-level Environmental Wide Shot.",
-            "balance": "Layered Horizontal Composition. "
-        },
-        "atmosphere": {
-            "mood": "Futuristic, Collaborative, Clean， Tech-driven.",
-            "feeling": "High-tech. Orderly bustle."
-        },
-        "technical_quality": {
-            "post_processing": "Vertical Keystone Correction (Vertical lines must be perfectly parallel), Chromatic Aberration removal , Slight cool toning.",
-            "white_balance": "Neutral Daylight (5500K)",
-            "tone": "High-key, bright and airy shadows.",
-            "vignette": "None.",
-            "dynamic_range": "Medium (The overcast light naturally compresses the dynamic range, making exposure easier)."
+      "camera_gear": {
+        "model": "Fujifilm GFX 100 II (Medium Format, 102MP for resolving the dense vertical lines)",
+        "lens": "Fujinon GF 32-64mm f/4 R LM WR @ 35mm (Wide angle to capture the expansive plaza and building width without excessive distortion)",
+        "sensor": "BSI CMOS Medium Format (High resolution essential for the intricate facade details)",
+        "shutter_speed": "1/250 sec (To freeze the movement of the crowd in the foreground)",
+        "aperture": "f/8.0 (Sweet spot for sharpness, sufficient depth of field for the entire building volume)"
+      },
+      "lighting_setup": {
+        "time_of_day": "Mid-day, Overcast",
+        "weather": "Cloudy Bright / High thin overcast clouds (Creating a giant softbox effect)",
+        "lighting_direction": "Omnidirectional / Top-down diffuse light (No harsh directional shadows)",
+        "quality": "Ultra-soft, shadowless illumination. Even brightness across the entire facade.",
+        "artificial_light": "Subtle warm interior glow visible through the glass layers, contrasting slightly with the cool exterior daylight"
+      },
+      "color_grading": {
+        "palette": "Desaturated palette with muted plants and clean architectural surfaces.",
+        "saturation": "Low Saturation (Minimalist and clinical)",
+        "contrast": "Low Global Contrast (Flat lighting), but High Local Contrast (Texture enhancement)"
+      },
+      "texture_quality": {
+        "details": "High frequency repetition.",
+        "surface_descriptions": "Transparent glass layers."
+      },
+      "composition_guide": {
+        "type": "Eye-level Environmental Wide Shot.",
+        "balance": "Layered Horizontal Composition."
+      },
+      "atmosphere": {
+        "mood": "Futuristic, Collaborative, Clean, Tech-driven.",
+        "feeling": "High-tech. Orderly bustle."
+      },
+      "technical_quality": {
+        "post_processing": "Vertical Keystone Correction (Vertical lines must be perfectly parallel), Chromatic Aberration removal , Slight cool toning.",
+        "white_balance": "Neutral Daylight (5500K)",
+        "tone": "High-key, bright and airy shadows.",
+        "vignette": "None.",
+        "dynamic_range": "Medium (The overcast light naturally compresses the dynamic range, making exposure easier)."
       }
     },
     "阴天风格3（重调）": {
@@ -922,7 +922,7 @@
         "artificial_light": "Ultra soft interior lights (30% opacity), lights reflecting on wet ground"
       },
       "color_grading": {
-        "palette": " Steel Blue, Anthracite, Cool Cyan undertones",
+        "palette": "Steel Blue, Anthracite, Cool Cyan undertones",
         "saturation": "Low, Desaturated",
         "contrast": "High, Crushed Blacks, punchy highlights"
       },
